@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6dd1dabe-c8a9-4730-8fc6-c8c7285f5cd2" name="USED" url="http://daw-used.sauces.local/DAW211/DIW">
+        <fileTransfer host="daw-used.sauces.local" port="22" rootFolder="/public_html/DIW" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
