@@ -1,9 +1,7 @@
-html,body {
+html,body{
 	height:100%;
 }
-
-header {
-		
+header{
 	display:block;
 	background:#286af0;
 	padding:10px 0px;
@@ -13,7 +11,7 @@ article>img{
 	height: 25%;
 	margin-left: 37.5%;
 }
-section {
+section{
 	width: 79%;
 	background: #ccc;
 	float: left;
@@ -24,8 +22,7 @@ section {
 small{
 	margin-left: 37.5%;
 }
-
-aside {
+aside{
 	float: right;
 	border: 1px solid red;
 	width: 19%;
@@ -33,7 +30,7 @@ aside {
 	/*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
 	/*visibility: hidden;*/
 }
-footer {
+footer{
 	position: relative;
 	margin-top: -50px;
 	height: 40px; 
@@ -43,6 +40,6 @@ footer {
 	text-align: center;
 	color: #fff;
 }
-figure {
+figure{
 	display: table; margin: 0 auto;
 }
