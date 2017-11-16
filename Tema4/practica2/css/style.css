@@ -1,0 +1,36 @@
+body{
+    background-image: url("../images/fondo.jpg");
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.foto{
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+h1{
+    font-style: italic;
+    font-size: 40px;
+    font-weight: normal;
+}
+.capitular{
+    float: left;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #232121;
+    color: rgb(255,255,255);
+    font-size: 2em;
+    margin: 0px 5px 0px 0px;
+    text-align: center;
+}
+p{
+    width: 60%;
+}
+blockquote>*{
+    width: 100%;
+}
+div>p{
+    float: right;
+}
