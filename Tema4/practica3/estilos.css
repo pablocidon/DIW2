@@ -1,0 +1,16 @@
+header{
+    background-color: slateblue;
+}
+button{
+    background-color: deepskyblue;
+}
+h2{
+    background-color: #286af0;
+    color: white;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
