@@ -1,37 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Práctica 3</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-</head>
-<body>
-    <header>
-        <h1>Todo FP</h1>
-        <h4>www.educacion.gob.es</h4>
-        <nav>
-            <button>Inicio</button>
-            <button>Información</button>
-            <button>Cursos</button>
-            <button>Alumnos</button>
-            <button>Ayuda</button>
-        </nav>
-    </header>
-    <section>
-        <div class="left">
-            <h2>Área de usuarios</h2>
-        </div>
-        <div class="left">
-            <h2>Unidades de trabajo</h2>
-        </div>
-        <h2>¡Bienvenidos a todos!</h2>
-        <h2>Hojas de estilos</h2>
-        <div class="right">
-            <h2>Webs de Interés</h2>
-        </div>
-    </section>
-    <footer>
-        TodoFP. Todos los derechos reservados. Diseñado por <a href="http://www.mecd.gob.es/portada-mecd/">Ministerio de Educación.</a>
-    </footer>
-</body>
+<html lang="es">
+    <head>
+        <title>Tarea 4 Dise&ntilde;o</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Todo FP</h1>
+                <p class="subtitulo">www.educacion.gob.es</p>
+            </div>
+            <nav>
+                <button><a id="activo" href="">Inicio</a></button>
+                <button><a href="informacion.html">DIW</a></button>
+                <button><a href="cursos.html">DWES</a></button>
+                <button><a href="alumnos.html">DWEC</a></button>
+                <button><a href="ayuda.html">DAW</a></button>
+            </nav>
+        </header>
+                <aside class="izquierda">
+                    <div class="acceso">
+                        <h2>Área de usuarios</h2>
+                        <form method="post" action="#">
+                            ID de Usuario:
+                            <input id="nombre" name="nombre" type="text" /><br><br>
+                            Contrase&ntilde;a:
+                            <input id="paso" name="paso" type="password" /><br><br>
+                            <input id="acceder" name="Acceder" type="submit" />
+                        </form>
+                    </div>
+                    <div class="unidades">
+                        <h2>UNIDADES DE TRABAJO</h2>
+                        <dt>DIW01, 2011</dt>
+                        <dd><a href="">Planificaci&oacute;n de interfaces gr&aacute;ficas...</a></dd>
+                        <dt>DIW02, 2011</dt>
+                        <dd><a href="">Accesibilidad en la web...</a></dd>
+                        <dt>DIW03, 2011</dt>
+                        <dd><a href="">Usabilidad en la web...</a></dd>
+                        <dt>DIW04, 2011</dt>
+                        <dd><a href="">Hojas de estilos...</a></dd>
+                        <dt>DIW05, 2011</dt>
+                        <dd><a href="">Contenidos multimedia en la web: im&aacute;genes...</a></dd>
+                    </div>
+                </aside>
+                <article class="centro">
+                    <div class="sombraD">
+                        <h2>¡Bienvenidos a TodoFP! <span class="fecha">Oct. 10, 2011</span></h2>
+                       <p>FP a distancia. Esta oferta est&aacute; dirigida especialmente a aquellaspersonas que, por diferentes razones (no solo laborales) no pueden cursar en los centros educativos, y en el horario presencial, la <a href="https://www.educacion.gob.es/fponline.html">Formaci&oacute;n Profesional</a>. Por tanto, mayoritariamente ser&aacute; el colectivo de personas adultas el destinatario de esta modalidad de ense&ntilde;anza. Toda la informaci&oacute;n desde la web: <a href="https://www.educacion.gob.es/fponline.html">FP online</a>. &#161;&#161;Matric&uacute;late&#33;&#33;</p>
+                        <hr>
+                        <p class="peque">Realizado por Manuel Vieites <a href="http://www.mecd.gob.es/portada-mecd/">Todo FP</a> | <a href="http://www.mecd.gob.es/educacion-mecd/">Educaci&oacute;n</a></p>
+                    </div>
+                    <div class="sombraD">
+                        <h2>DIW04. HOJAS DE ESTILOS.<span class="fecha">Oct. 10, 2011</span></h2>
+                        <div class="logoFP">FP</div>
+                       <p class="cursiva">"Orden EDU/2887/2010, de 2 de noviembre, por la que se establece el curr&iacute;culo
+                                del ciclo formativo de Grado Superior correspondiente al t&iacute;tulo de
+                                T&eacute;cnico Superior en Desarrollo de Aplicaciones Web."</p>
+                        <p>T&eacute;cnicas, procedimiento y actitudes relacionadas:</p>
+                        <ol>
+                            <li>Crear y vincular hojas de estilo</li>
+                            <li>Crear y vincular hojas de estilo en cascada externa</li>
+                        </ol>
+                        <p>Conceptos soporte relacionados:</p>
+                        <ol>
+                            <li>Estilos en l&iacute;nea basados en etiquetas y en clases</li>
+                            <li>Hojas de estilo auditivas</li>
+                            <li>Hojas de estilo para imprimir</li>
+                            <li>Herramientas y test de verificaci&oacute;n</li>
+                        </ol>
+                        <hr>
+                            <p class="peque">Realizado por Manuel Vieites <a href="">DIW</a> | <a href="http://www.mecd.gob.es/portada-mecd/">Todo FP</a></p>
+                    </div>
+                </article>
+                <aside class="derecha">
+                    <div class="sombraD">
+                        <h2>WEBS DE INTERÉS</h2>
+                        <ul id="idli">
+                            <li><a href="http://www.mecd.gob.es/portada-mecd/">TodoFP</a></li>
+                            <li><a href="https://www.educacion.gob.es/fponline.html">FP on line</a></li>
+                            <li><a href="http://www.edu.xunta.es/platega/login/index.php">Platega</a></li>
+                            <li><a href="http://www.iessanvicente.com/">IES San Clemente</a></li>
+                        </ul>
+                        <img src="img/imagen.jpg" style="width: 95px; height:478px;" alt="TodoFP te ofrece la libertad" title="TodoFP es sin&oacute;nimo de libertad" />
+                    </div>
+                </aside>
+        <footer>
+            <p class="peque" style="text-align: center;">Copyright &copy; 2017 Pablo Cidón Barrio.</p>
+            <img src="img/wcag2AAA.gif" alt="Accesibilidad">
+        </footer>
+    </body>
 </html>

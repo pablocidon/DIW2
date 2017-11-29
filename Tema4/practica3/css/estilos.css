@@ -1,0 +1,117 @@
+*{
+    margin: 0px auto;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: slateblue;
+    padding: 2% 2% 4%;
+    border-radius: 25px;
+    margin: 0 2%;
+    text-align: center;
+}
+h1{
+    color: #333;
+    text-shadow: 0px 1px 3px #FFFFFF;
+    font-family: sans-serif;
+    left: 0px;
+    bottom: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.subtitulo{
+    font-size: 35px;
+}
+button{
+    background-color: deepskyblue;
+}
+h2{
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.izquierda{
+    float: left;
+    width: 15%;
+    margin-top: 0px;
+    margin-left: 2%;
+    position: static;
+}
+.derecha>*{
+    width: 15%;
+    padding-left: 20px;
+    float: right;
+    position: static;
+    left: 0px;
+    top: 0px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.centro{
+    position: absolute;
+    margin-left: 18%;
+    margin-right: 19%;
+    width: auto;
+}
+h2>span{
+    float: right;
+}
+.derecha>img{
+    display: block;
+}
+nav{
+    float: right;
+}
+footer{
+    border-style: solid;
+    border-radius: 25px;
+    border-bottom-style: none;
+    margin: 0 2%;
+    padding: 0 2%;
+    float: left;
+    position: relative;
+    left: 0px;
+}
+hr{
+    margin: 10px 20px;
+    border: 1px dashed #666;
+}
+section{
+    margin: 2%  0%;
+}
+p,dt{
+    padding: 0 2%;
+}
+ol,a{
+    padding: 0 8%;
+}
+.sombraD{
+    box-shadow: 3px 3px 4px #b1b3a2;
+    -moz-box-shadow: 3px 3px 4px #b1b3a2;
+    -webkit-box-shadow: 3px 3px 4px #b1b3a2;
+}
+/*.subtitusombraD,.acceso,.unidades{
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font: 0.9em/1.4 Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+}*/
+h2{
+    margin-bottom: 25px;
+}
+.unidades>*{
+    margin: 5px 0px;
+}
+nav>button{
+    height: 50%;
+    font-size: 25px;
+    text-align: center;
+}
+footer>img{
+    float: right;
+}
