@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Objetos H</title>
     <style type="text/css">
-        strong{color:red;}
-        h1 strong{color:blue;} h1 strong{color:yellow;} h1 strong{color:deepskyblue;}
-        h1 {padding: 20px 50px; background: #ccc;}
-        h2 strong{color: green;}
-        h3 strong{color: orangered;}
-        h4 strong{color: aquamarine;}
-        h5 strong{color: purple;}
-        h6 strong{color: darkturquoise;}
-        p{color: yellowgreen;}
-        h2 {border-style: solid dashed dotted double; }h2 {border-style: solid dashed dotted double; }
-        h1 {border-style: solid; border-width: thin medium thick 12px; }
-        h3 {border-style: solid; border-width: 4px; border-color: #333 #red rgb(0,0,255) #0044AC;}
-        h1 {border: .5em solid blue; }
-        h2 {border-left: solid blue .5em; }
-        h3 {border-right: solid yellow .5em; }
-        h1 {margin: 10px 20px 10px 20px; }
-        h2 {margin: 20px; }
-        p{text-decoration: blink;}
+        h1,h2,p{color: blue;}
+       /*{color: grey;}*/
+        ul li{color: red;}
+        ul a li{color: yellow;}
+        /*p a { color: orangered; }*/
+        p * a { color: greenyellow; }
+        p > em {background-color: gray;}
+        h4 + h5{color: deepskyblue;}
+        #p{color: green;}
+        .f{color: #286af0;}
+        a:link {color: red; text-decoration: none;}
+        a:visited {color: blue; text-decoration: none;}
+        a:hover {color: fuchsia; text-decoration: underline;}
+        a:active {color: maroon;}
+        ul li:first-child {font-weight:bold;}
+        input:focus {background-color: yellow;}
+        h1:first-letter{color: #FFAA00;}
     </style>
 </head>
     <body>
         <h1><strong>HOLA MUNDO</strong></h1>
         <h2><strong>HOLA MUNDO</strong></h2>
-        <h3><strong>HOLA MUNDO</strong></h3>
+        <h3 class="f"><strong>HOLA MUNDO</strong></h3>
         <h4><strong>HOLA MUNDO</strong></h4>
         <h5><strong>HOLA MUNDO</strong></h5>
-        <h6><strong>HOLA MUNDO</strong></h6>
-        <p>Esto es un <strong>párrafo</strong></p>
+        <h6 class="f"><strong>HOLA MUNDO</strong></h6>
+        <p id="p">hhh<a href="#">Enlace</a></p>
+        <p><span><a href="#">Enlace</a></span></p>
+        <a href="http://www.google.es">Enlace Roto</a>
+        <p><em>GGG</em></p>
+        <p class="f">AAA</p>
+        <p class="f">BBB</p>
+        <ul>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+        <input type="button" value="Botón">
     </body>
 </html>
