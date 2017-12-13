@@ -1,0 +1,37 @@
+figure{
+    display: inline-block;
+    width: 10%;
+}
+div{
+    border-top: solid black 1px;
+}
+img{
+    width: 100%;
+    border-style: solid;
+    border-color: #5E768D;
+    border-width: 5px;
+    border-radius: 15px;
+}
+header{
+    padding: 1% 0;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    background: linear-gradient(blue, cyan); /* Standard syntax */
+    width: 50%;
+    margin-left: 22%;
+    border-radius: 15px;
+    text-shadow: #FFF 2px 2px 3px;
+    -webkit-box-shadow: 24px 25px 67px -22px rgba(8,20,245,1);
+    -moz-box-shadow: 24px 25px 67px -22px rgba(8,20,245,1);
+    box-shadow: 24px 25px 67px -22px rgba(8,20,245,1);
+}
+*{
+    font-family: Arial;
+}
+figcaption{
+    font-size: 15px;
+}
+img:hover{
+    width: 120%;
+}
