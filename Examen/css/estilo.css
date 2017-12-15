@@ -1,0 +1,99 @@
+#logos{
+    width: 60%;
+    margin-left: 20%;
+}
+#junta:hover{
+    width: 30%;
+}
+body{
+    background-color: #f6f6f6;
+    font-family: Fuente;
+}
+.contenido{
+    border-style: dotted;
+    border-width: 2px;
+    text-align: center;
+    padding: 10px;
+}
+hr{
+    height: 25px;
+    background-color:  #7c96aa;
+    border-radius: 5px;
+}
+nav{
+    display: inline-block;
+    width: 60%;
+}
+#derecha:hover{
+    background-color: red;
+}
+#izquierda:hover{
+    background-color: red;
+}
+ #centro:hover{
+     background-color: red;
+ }
+#izquierda{
+    float: left;
+    background-color: #7c96aa;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    width: 30%;
+}
+#centro{
+    margin: auto;
+    background-color: #7c96aa;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    width: 30%;
+    position: relative;
+}
+#derecha{
+    float: right;
+    background-color: #7c96aa;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    width: 30%;
+    position: relative;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+h1,h2{
+    text-shadow: rgb(0,0,0) 3px 3px 5px;
+}
+h1{
+    font-size: 30px;
+    color: #7c96aa;
+}
+h2{
+    font-size: 25px;
+    color: #aec0ce;
+}
+article{
+    width: 78%;
+    float: left;
+    position: relative;
+}
+aside{
+    width: 20%;
+    float: right;
+    background-color: #aec0ce;
+    position: relative;
+    padding: 10px;
+}
+
+footer{
+    float: left;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 8 px 10px;
+}

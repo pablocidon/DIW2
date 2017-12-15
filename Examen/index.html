@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXAMEN</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic%7CSource+Sans+Pro%3A200%2C300%2C400%2C600%2C700%2C900%2C200italic%2C300italic%2C400italic%2C600italic%2C700italic%2C900italic&#038;ver=1459135265'" media='all'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic%7CSource+Sans+Pro%3A200%2C300%2C400%2C600%2C700%2C900%2C200italic%2C300italic%2C400italic%2C600italic%2C700italic%2C900italic&#038;ver=1459135265' type='text/css' media='all'">
+</head>
+    <body>
+        <header>
+            <div id="logos">
+                <img src="images/LogoJunta.png" alt="logo junta" id="junta">
+                <img src="images/logo_sauces1.png" alt="logo sauces">
+            </div>
+            <nav>
+                <div id="izquierda">
+                    <a href="#problemas">Problemas Resueltos por HTML5</a>
+                </div>
+                <div id="centro">
+                    <a href="#algoritmo">El Algoritmo de Perfilado de HTML5</a>
+                </div>
+                <div id="derecha">
+                    <a href="#ejemplo">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <article>
+                <div class="contenido">
+                    <h1>Secciones y líneas generales de un documento HTML5</h1>
+                    <strong>
+                        La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.
+                    </strong>
+                </div>
+                <hr>
+                <span id="problemas">
+                    <div class="contenido">
+                        <h2 class="fa fa-cloud">Problemas resueltos por HTML5</h2>
+                        <strong>
+                            La definición de la estructura de un documento en HTML 4 y su algoritmo de perfilado es muy tosco y genera numerosos problemas.
+                        </strong>
+                    </div>
+                    <ol>
+                        <li>
+                            HTML5 quita la necesidad de elementos &lt;div&gt; para definir secciones semánticas sin definir valores específicos para los atributos class,
+                       introduciendo un nuevo elemento, &lt;section&gt;, el elemento de sección HTML.
+                        </li>
+                        <li>
+                            Mezclar varios documentos es difícil: la inclusión de un sub-documento en un documento principal. Esto se resuelve en HTML5 con los elementos de seccionado
+                       (&lt;article&gt;, &lt;section&gt;, &lt;nav&gt; y &lt;aside&gt;) son siempre subsecciones de su sección ancestra más cercana.
+                        </li>
+                        <li>
+                            HTML5 introduce el elemento &lt;hgroup&gt; que oculta todos los elementos de cabecera excepto el primero de más alto rango
+                      (por ejemplo, &lt;hgroup&gt;&lt;h1&gt;Justine&lt;/h1&gt;&lt;h2&gt;Les Malheurs de la Vertu&lt;/h2&gt;&lt;/hgroup&gt; crea el perfil 1. Justine).
+                        </li>
+                        <li>
+                            Un documento puede tener secciones especiales conteniendo información relacionado que no es parte del flujo principal.
+                       HTML5 introduce el elemento &lt;aside&gt; permitiendo a dichas secciones no ser parte del perfil principal.
+                        </li>
+                        <li>
+                            Hay información relacionada no al documento pero si al sitio entero, como logos, menús, tablas de contenidos, o información de derechos de autor y notas legales.
+                        </li>
+                    </ol>
+                    <p>Para ese propósito, HTML5 introduce tres elementos de sección específicos: &lt;nav&gt; para colecciones de enlaces, como una tabla de contenidos, &lt;footer&gt; y &lt;header&gt;
+                        información relacionada con el sitio.</p>
+                </span>
+                <hr>
+                <span id="algoritmo">
+                   <div class="contenido">
+                        <h2 class="fa fa-cloud">El algoritmo de perfilado de HTML5</h2>
+                        <strong>
+                            Definiendo secciones en HTML5
+                        </strong>
+                    </div>
+                    Todo el contenido incluido dentro del elemento &lt;body&gt; es parte de una sección. Las secciones en HTML5 pueden ser anidadas. Además de la sección principal,
+                    definida por el elemento &lt;body&gt;, los límites de la sección son definidos explícita o implícitamente. La secciones definidas explícitamente son el
+                    contenido definido en las etiquetas &lt;body&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, y &lt;nav&gt;. Nota: Cada sección puede tener su propia
+                    jerarquía de cabeceras. Por lo tanto, incluso una sección anidada puede tener un elemento &lt;h1&gt;. Consulte también Definiendo cabeceras en HTML5.
+                </span>
+                <hr>
+                <span id="ejemplo">
+                    <div  class="contenido">
+                        <h2 class="fa fa-cloud">Ejemplo:</h2>
+                    </div>
+                    <pre>
+                        &lt;section&gt;
+                            &lt;h1&gt;Forest elephants&lt;h1&gt;
+                            &lt;section&gt;
+                                &lt;h1&gt;Introduction&lt;h1&gt;
+                                &lt;p&gt;In this&lt;section&gt; we discuss the lesser known forest elephants.&lt;p&gt;
+                            &lt;/section&gt;
+                            &lt;section&gt;
+                                &lt;h1&gt;Habitat&lt;h1&gt;
+                                &lt;p&gt;Forest elephants do not live in trees but among them.&lt;p&gt;
+                            &lt;/section&gt;
+                            &lt;aside&gt;
+                                &lt;p&gt;advertising block
+                            &lt;/aside&gt;
+                        &lt;/section&gt;
+                        &lt;footer&gt;
+                            &lt;p&gt;(c) 2010 The Example company&lt;p&gt;
+                        &lt;/footer&gt;
+                    </pre>
+                </span>
+            </article>
+            <aside>
+                <h3>HTML5 + CSS3</h3>
+                <p>La web semántica</p>
+            </aside>
+        </section>
+    <footer>
+        <p>(c) IES Los Sauces. Colocación de Elementos Semánticos</p>
+    </footer>
+    </body>
+</html>
