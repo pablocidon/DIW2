@@ -1,0 +1,37 @@
+body{
+    background-color: #5cd65c;
+}
+header, #cabecera{
+    background-color: #99ff66;
+    width: 550px;
+    padding: 10px 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 403.5px;
+}
+#oculta{
+    background-color: #ccff66;
+}
+#izquierda{
+    float: left;
+    position: relative;
+}
+#derecha{
+    float: right;
+    position: relative;
+}
+video,object{
+    position: relative;
+    margin-left: 383.5px;
+}
+article,#info{
+    width: 550px;
+    height: 150px;
+    margin-left: 428.5px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 603.5px;
+}
