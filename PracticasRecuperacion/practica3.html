@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 3</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <style type="text/css">
+        *{
+            font-family: Arial;
+        }
+        h2{
+            color: #00cc00;
+            background-color: #e6e6e6;
+        }
+        label{
+            font-weight: bold;
+        }
+        input,textarea{
+            margin-left: 2%;
+        }
+        #email{
+            margin-left: 3.5%;
+        }
+        #nombre{
+            margin-left: 2.4%;
+        }
+        textarea{
+            margin-left: 7%;
+        }
+        #submit{
+            font-size: 15px;
+            height: 40px;
+            width: 80px;
+            border-radius: 10px;
+            margin-left: 7%;
+            background: linear-gradient(#ffffff, #bfbfbf);
+        }
+        hr{
+            color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+<form action="#">
+    <h2>Contáctanos</h2>
+    <hr>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+    <br> <hr><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Introduce tu email">
+    <br> <hr><br>
+    <label for="url">Sitio web:</label>
+    <input type="url" name="url" id="url" placeholder="Introduce tu web">
+    <br> <hr><br>
+    <label for="mensaje">
+<pre>
+Deja tu
+mensaje:
+</pre></label>
+    <textarea name="mensaje" id="mensaje" rows="10" cols="100"></textarea>
+    <br> <hr><br>
+    <input type="submit" name="enviar" value="Enviar" id="submit">
+</form>
+</body>
+</html>

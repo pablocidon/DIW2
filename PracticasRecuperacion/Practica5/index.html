@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 5</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+</head>
+<body>
+    <header>
+        <img src="images/Logo.png">
+        <h1 id="titulo">Introducción a HTML</h1>
+    </header>
+    <main>
+        <aside>
+            <div>
+                <h4>HTML</h4>
+                <a href="#" class="html" id="abierto">Introducción a HTML</a><br>
+                <a href="#" class="html">Organización de un Sitio Web</a><br>
+                <a href="#" class="html">Etiquetas Básicas</a><br>
+                <a href="#" class="html">Estructura del texto</a><br>
+                <a href="#" class="html">Formato del texto</a><br>
+                <a href="#" class="html">Hipervínculos</a><br>
+                <a href="#" class="html">Imágenes y multimedia</a><br>
+                <a href="#" class="html">Listas</a><br>
+                <a href="#" class="html">Tablas</a><br>
+                <a href="#" class="html">Marcos</a><br>
+                <a href="#" class="html">Agrupación de Elementos</a><br>
+                <a href="#" class="html">Capas</a><br>
+                <a href="#" class="html">Formularios</a><br>
+                <a href="#" class="html">Extras</a><br>
+                <a href="#" class="html">XHTML y HTML</a><br>
+                <a href="#" class="html">Bibliografía y enlaces</a><br>
+                <a href="#" class="html">Guía rápida de HTML (PDF)</a><br>
+            </div>
+            <hr>
+            <div>
+                <h4>CSS</h4>
+                <a href="#" class="css">Introducción a CSS</a><br>
+                <a href="#" class="css">Tipos de hojas de estilo</a><br>
+                <a href="#" class="css">Estructura documento CSS</a><br>
+                <a href="#" class="css">Reglas de estilo</a><br>
+                <a href="#" class="css">Criterios de selección</a><br>
+                <a href="#" class="css">Propiedades y valores</a><br>
+                <a href="#" class="css">Herencia y precedencia</a><br>
+                <a href="#" class="css">Ejemplos de background</a><br>
+                <a href="#" class="css">Ejemplos de texto</a><br>
+                <a href="#" class="css">Ejemplos de links y tablas</a><br>
+                <a href="#" class="css">Ejemplos de imagenes y bordes</a><br>
+                <a href="#" class="css">Diseño visual I</a><br>
+                <a href="#" class="css">Diseño visual II</a><br>
+                <a href="#" class="css">Ejemplos de homepages</a><br>
+                <a href="#" class="css">Validación de CSS</a><br>
+                <a href="#" class="css">Proyecto final</a><br>
+                <a href="#" class="css">Bibliografía y enlaces</a><br>
+                <a href="#" class="css">Guía rápida de CSS 2.1</a><br>
+            </div>
+        </aside>
+        <article>
+            <h1>Introducción histórica</h1>
+            <p>Tim Berners Lee desarrolla HTMLa principios de los años 90.</p>
+            <ul>
+                <li>En 1995 se publica el primer estándar oficial llamado HTML 2.0</li>
+                <li>
+                    En 1997 se publica la versión HTML 3.2 por la organización W3C (World Wide Web Consortium), que y es el organismo oficial
+                    encargado de publicar los estándares.
+                </li>
+                <li>
+                    En 1998 aparece la versión HTML 4.0 que incluye soporte para lenguajes script, hojas de estilo css, facilidades de
+                    impresión etc…
+                </li>
+                <li>
+                    En 2000 el W3C publica XHTML 1.0 que es una reformulación de HTML 4.0 basada en XML.
+                    XHTML 1.0 está aceptado y es ampliamente utilizado.
+                </li>
+                <li>
+                    En 2003 aparecen los famosos XFORMS, los formularios de XHTML, que mejoran considerablemente a los anteriores gracias a
+                    que separan el contenido de la presentación.
+                </li>
+                <li>En 2004 Apple, Mozilla y Opera crean un grupo de trabajo llamado WHATWG para seguir desarrollando HTML</li>
+                <li>
+                    En 20008 W3C y WHATWG, unidos, publican el primer borrador de HTML5 que incluye todos los elementos válidos tanto en
+                    HTML 4 como en XHTML 1.0. Funciona en la mayoría de las plataformas existentes en el mercado y es compatible con los
+                    navegadores antiguos. HTML5 incluye nuevos elementos de marcado cuya semántica está asociada con el significado de
+                    los contenidos que vamos a introducir en ellos, por ejemplo, la etiqueta &lt;article&gt;.
+                </li>
+            </ul>
+            <p>Resumen:</p>
+            <p>HTML 4.01 y XHTML 1.0 son las especificaciones más utilizadas.</p>
+            <p>HTML 5 se va incorporando progresivamente.</p>
+
+            <h1>Introducción a HTML</h1>
+            <p>
+                Cuando visitamos una página web vemos textos, imágenes, colores de fondo, en algunos casos elementos que se desplazan por la pantalla, en fin, todo el conjunto de
+                elementos que hacen de dicha página un espacio multimedia e interactivo. Aunque podríamos pensar que todos esos elementos están incluidos en la página, no es así.
+                Realmente, el único de todos ellos que pertenece a la propia página es el <b>texto</b>. Y, entonces, ¿por qué se ve lo que aparece en la página? La respuesta es que una
+                página web no es más que un <b>documento de texto</b> acompañado de una colección de <b>etiquetas</b> que sirven para que el navegador:
+            </p>
+            <ul>
+                <li>interprete de qué forma tiene que presentar el texto.</li>
+                <li>sepa de dónde tiene que obtener las imágenes y sonidos y cómo mostrarlos.</li>
+                <li>distribuya todos los contenidos de una forma determinada dentro de la pantalla.</li>
+            </ul>
+
+            <p>
+                El lenguaje que contiene dichas etiquetas se denomina <b>HTML</b>. Las siglas HTML se corresponden con la definición "Lenguaje para marcado de hipertexto"
+                (Hyper-text Markup Language). Este lenguaje se utiliza para estructurar documentos de texto que puedan ser interpretados por navegadores y distribuidos a través de
+                Internet.
+            </p>
+            <p>
+                Los documentos escritos en HTML están formados por <b>texto plano</b>. De esta manera, un documento HTML puede ser visualizado con un editor de textos convencional.
+                Nosotros utilizaremos el editor <b>Notepad++</b>.
+            </p>
+            <h2>Formato de las etiquetas HTML</h2>
+            <p>
+                Las etiquetas HTML se escriben encerradas entre ángulos (< y >). Normalmente se utilizan dos etiquetas: una de inicio y otra de fin. La única diferencia entre
+                ambas es que la de cierre lleva una barra inclinada (/) antes del código. De esta manera, el texto que aparezca entre ambas etiquetas presentará el efecto que dichas
+                etiquetas indiquen. Existe una etiqueta para cada tipo de efecto. Algunos ejemplos de efectos son los siguientes:
+            </p>
+
+            <div class="recuadro">
+                &lt;b&gt;Este texto aparecerá en negrita en la pantalla.&lt;/b&gt;<br>
+                &lt;i&gt;Este texto aparecerá en cursiva en la pantalla.&lt;/i&gt;<br>
+                &lt;font family="Arial"&gt;Este texto aparecerá en con letra Arial en la pantalla.&lt;/font&gt;
+            </div>
+            <p>
+                En los siguientes apartados iremos estudiando las distintas etiquetas. Se incluye un resumen de las más importantes en el enlace <a href="#"> Guía de referencia
+                rápida de HTML</a>.
+            </p>
+            <h2>Etiquetas dentro de etiquetas</h2>
+            <p>
+                Se pueden abrir etiquetas dentro de otras etiquetas. Sin embargo, hay que tener en cuenta que se deben cerrar en orden inverso al orden de apertura.
+                Para facilitar esta tarea, se suelen dejar sangrías cada vez que se inicia una nueva apertura. Por ejemplo:
+            </p>
+            <div class="recuadro">
+<pre>
+    &lt;etiqueta1&gt;
+        Este nivel está afectado por la etiqueta 1
+        &lt;etiqueta2&gt;
+            Este nivel está afectado por la etiqueta 1 y 2
+            &lt;etiqueta3&gt;
+                Este nivel está afectado por la etiqueta 1, 2 y 3
+            &lt;/etiqueta3&gt;
+            Este nivel está afectado por la etiqueta 1 y 2
+        &lt;/etiqueta2&gt;
+        Este nivel está afectado por la etiqueta 1
+    &lt;/etiqueta1&gt;
+</pre>
+            </div>
+            <br>
+            <div class="recuadro">
+<pre>
+    texto normal
+    &lt;b&gt;
+        texto en negrita
+        &lt;i&gt;
+            Texto en negrita y cursiva
+            &lt;small&gt;
+                Este texto aparecerá en negrita, cursiva y tamaño pequeño.
+            &lt;/small&gt;
+            Texto en negrita y cursiva
+        &lt;/i&gt;
+        Texto en negrita
+    &lt;/b&gt;
+</pre>
+            </div>
+
+            <h2>Atributos de las etiquetas</h2>
+            <p>
+                La mayoría de las etiquetas admiten atributos.
+                Los atributos ofrecen distintos efectos para las etiquetas sobre las que se aplican.
+                El formato general de las etiquetas con atributos es el siguiente:
+            </p>
+            <div class="recuadro">
+<pre>
+    &lt;etiqueta1 atributo1="valor1" atributo2="valor2"&gt;
+        Texto afectado por la etiqueta1
+    &lt;/etiqueta1&gt;
+</pre>
+            </div>
+            <p>
+                Cada etiqueta tiene sus propios atributos disponibles, que se pueden consultar en la <a href="#"> Guía de referencia rápida de HTML</a>.
+                Los valores de los atributos pueden tomar unos valores determinados (numéricos, texto, valores hexadecimales,...), pero siempre irán entre comillas
+            </p>
+        </article>
+    <footer>
+        <a class="pie" href="#">Manual de HTML -</a>
+        <a class="pie" href="#">CSS -</a>
+        <a class="pie" href="#">Diseño de Interfaces Web -</a>
+        <a class="pie" href="#">DAW</a>
+    </footer>
+    </main>
+
+</body>
+</html>
