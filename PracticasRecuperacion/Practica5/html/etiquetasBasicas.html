@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 5</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+</head>
+<body>
+<header>
+    <img src="../images/Logo.png">
+    <h1 id="titulo">Etiquetas básicas</h1>
+</header>
+<main>
+    <aside>
+        <div>
+            <h4>HTML</h4>
+            <a href="../index.html" class="html">Introducción a HTML</a><br>
+            <a href="organizacion.html" class="html">Organización de un Sitio Web</a><br>
+            <a href="etiquetasBasicas.html" class="html" id="abierto">Etiquetas Básicas</a><br>
+            <a href="estructura.html" class="html">Estructura del texto</a><br>
+            <a href="formato.html" class="html">Formato del texto</a><br>
+            <a href="hipervinculos.html" class="html">Hipervínculos</a><br>
+            <a href="imagenes.html" class="html">Imágenes y multimedia</a><br>
+            <a href="listas.html" class="html">Listas</a><br>
+            <a href="tablas.html" class="html">Tablas</a><br>
+            <a href="marcos.html" class="html">Marcos</a><br>
+            <a href="agrupacion.html" class="html">Agrupación de Elementos</a><br>
+            <a href="capas.html" class="html">Capas</a><br>
+            <a href="formularios.html" class="html">Formularios</a><br>
+            <a href="extras.html" class="html">Extras</a><br>
+            <a href="xhtml.html" class="html">XHTML y HTML</a><br>
+            <a href="#" class="html">Bibliografía y enlaces</a><br>
+            <a href="#" class="html">Guía rápida de HTML (PDF)</a><br>
+        </div>
+        <hr>
+        <div>
+            <h4>CSS</h4>
+            <a href="#" class="css">Introducción a CSS</a><br>
+            <a href="#" class="css">Tipos de hojas de estilo</a><br>
+            <a href="#" class="css">Estructura documento CSS</a><br>
+            <a href="#" class="css">Reglas de estilo</a><br>
+            <a href="#" class="css">Criterios de selección</a><br>
+            <a href="#" class="css">Propiedades y valores</a><br>
+            <a href="#" class="css">Herencia y precedencia</a><br>
+            <a href="#" class="css">Ejemplos de background</a><br>
+            <a href="#" class="css">Ejemplos de texto</a><br>
+            <a href="#" class="css">Ejemplos de links y tablas</a><br>
+            <a href="#" class="css">Ejemplos de imagenes y bordes</a><br>
+            <a href="#" class="css">Diseño visual I</a><br>
+            <a href="#" class="css">Diseño visual II</a><br>
+            <a href="#" class="css">Ejemplos de homepages</a><br>
+            <a href="#" class="css">Validación de CSS</a><br>
+            <a href="#" class="css">Proyecto final</a><br>
+            <a href="#" class="css">Bibliografía y enlaces</a><br>
+            <a href="#" class="css">Guía rápida de CSS 2.1</a><br>
+        </div>
+    </aside>
+    <article>
+        <h1>Etiquetas básicas</h1>
+        <p>
+            En este punto sabemos que una <b>página web</b> está formada exclusivamente por <b>texto:</b> parte de ese texto aparecerá <b>en pantalla</b>
+            (son los <b>contenidos</b> que se quieren mostrar) y el resto estará formado por <b>etiquetas</b> que <b>no aparecerán en pantalla</b>, pero
+            que <b>tendrán algún efecto sobre la página</b> (pondrán parte del texto en negrita, estructurarán los contenidos en forma de
+            tablas o listas, cambiarán el tipo de letra o el tamaño del texto, etc.).
+        </p>
+        <p>Las etiquetas, así como sus atributos, se suelen indicar <b>en minúscula.</b></p>
+        <p>
+            Es importante saber que las páginas web <b>están estructuradas</b>: es decir, que deben seguir una serie de reglas para que
+            sean interpretadas correctamente por los navegadores web. A continuación se explica dicha estructura genérica.
+        </p>
+        <h2>Esquema general de una página web</h2>
+        <p>El esquema general de una página web tiene el siguiente aspecto:</p>
+        <div class="recuadro">
+<pre>
+    <b><i>DECLARACIÓN DEL TIPO DE DOCUMENTO</i></b>
+    <b>&lt;html&gt;</b>
+
+        <b>&lt;head&gt;</b>
+            <b>&lt;title&gt;</b>Título de la página<b>&lt;/title&gt;</b>
+            Elementos opcionales de la cabecera
+            <b>&lt;style&gt;</b>Definición de los estilos de la página<b>&lt;/style&gt;</b>
+        <b>&lt;/head&gt;</b>
+
+        <b>&lt;body&gt;</b>
+            Contenidos del cuerpo
+        <b>&lt;/body&gt;</b>
+
+    <b>&lt;/html&gt;</b>
+</pre>
+        </div>
+
+        <p>
+            Toda la página web debe estar almacenada entre las etiquetas <b>&lt;html&gt; &lt;/html&gt;</b>, con la excepción de la declaración de tipo
+            de documento. Como puede verse en la figura, hay <b>tres partes</b> diferenciadas en toda página web:
+        </p>
+
+        <ul>
+            <li>
+                <b>Declaración de tipo de documento.</b> Es una línea de texto que especifica el tipo de documento que hay en el archivo.
+                Se explica en el siguiente apartado. Es la <b>única parte</b> de la página web que <b>no está almacenada</b> dentro de las etiquetas
+                <b>&lt;html&gt; &lt;/html&gt;</b>.
+            </li>
+            <li>
+                <b>Cabecera.</b> Está delimitada por las etiquetas <b>&lt;head&gt; &lt;/head&gt;</b>. En la cabecera se incluye aquella información de la página
+                que <b>no va a aparecer en pantalla</b> (salvo el <b>título de la página</b>, que aparece en la barra superior del navegador web).
+                Sirve para indicar el nombre del autor, palabras clave, programas script que se ejecutarán, etc.
+            </li>
+            <li>
+                <b>Cuerpo.</b> Está delimitado por las etiquetas <b>&lt;body&gt; &lt;/body&gt;</b>. En el cuerpo de la página se incluye aquella información que <b>se
+                va a representar en pantalla.</b> En el cuerpo es donde se almacenan los contenidos de la página: texto, imágenes, tablas,
+                listas,...
+            </li>
+        </ul>
+
+        <h2>La declaración del tipo de documento</h2>
+        <p>
+            El W3C es un organismo que se encarga de fijar las normas que deben seguir los documentos escritos en HTML. Según este
+            organismo, todo documento HTML deberá contener al principio del mismo una línea que indique qué tipo de documento es.
+            Es lo que se llama la <b>declaración del tipo de documento.</b>
+        </p>
+        <p>
+            Al indicar la DTD (Document Type Definition) al principio del documento le estamos diciendo al navegador cómo interpretar
+            adecuadamente el dódigo. Los tipos de documento válidos para HTML y sus declaraciones correspondientes se muestran a
+            continuación:
+        </p>
+        <ul>
+            <li>
+                <b>Documento HTML estricto.</b> Los documentos de este tipo se ajustan a la especificación más rígida del W3C. Significa que
+                <b>no se pueden usar</b> determinadas etiquetas y atributos HTML que están <b>en fase de quedarse obsoletos.</b> HTM 4.01 recomienda
+                separar por completo el contenido del formato. Si cumplimos escrupulosamente con esta recomendación, almacenando toda la
+                información sobre el formato en una hoja de estilos CSS, entonces podemos utilizar la declarción estricta. Estos
+                documentos deberán incorporar el siguiente código al principio:
+                <br><br>
+                <div class="recuadro" style="text-align: left">
+<pre>
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd"&gt;
+</pre>
+                </div>
+                <br>
+            </li>
+            <li>
+                <b>Documento HTML transicional.</b> Los documentos de este tipo se ajustan a la especificación más permisiva del W3C.
+                Significa que <b>se pueden usar</b> determinadas etiquetas y atributos HTML que están <b>en fase de quedarse obsoletos.</b>
+                Si queremos combinar contenido e información de formato en nuestro documento HTML, entonces debemos utilizar la
+                declaración de transición. Estos documentos deberán incorporar el siguiente código al principio:
+                <br><br>
+                <div class="recuadro" style="text-align: left">
+<pre>
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/loose.dtd"&gt;
+</pre>
+                </div>
+                <br>
+            </li>
+            <li>
+                <b>Documento HTML con marcos.</b> Los documentos de este tipo son los que llevan incorporados <b>marcos</b> (etiquetas &lt;frame&gt; y
+                &lt;frameset&gt;). Estos documentos deberán incorporar el siguiente código al principio:
+                    <br><br>
+                <div class="recuadro" style="text-align: left">
+<pre>
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/loose.dtd"&gt;
+</pre>
+                </div>
+                <br>
+            </li>
+            <li>
+                <b>En HTML 5.</b> La declaración es más sencilla:
+                <br><br>
+                <div class="recuadro" style="text-align: left">
+<pre>
+    &lt;!DOCTYPE html&gt;
+</pre>
+                </div>
+                <br>
+            </li>
+            <li>
+                Copia el código de abajo en un archivo de texto (con el bloc de notas por ejemplo) con el nombre Ejemplo_1.html y luego
+                observa el resultado en el navegador.
+                <br><br>
+                <div class="recuadro" style="text-align: left">
+<pre>
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                    "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Mi primera página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+                </div>
+                <br>
+            </li>
+        </ul>
+        <h2>La cabecera</h2>
+        <p>
+            La cabecera almacena información sobre el título de la página y otros datos importantes, entre ellos la
+            codificación de caracteres que emplea la página.
+        </p>
+        <h3>Codificación de caracteres</h3>
+        <p>
+            <b>Todo documento</b> deberá incorporar información sobre el <b>tipo de codificación</b> de caracteres que almacena. La codificación
+            de caracteres depende del editor utilizado (en el Notepad++ se puede elegir en el menú Codificación).
+            La elección de una codificación de caracteres u otra tendrá como consecuencia que se puedan escribir los
+            caracteres españoles (ñ, á, ò, ¿,...) directamente en el contenido de la página o que se deban emplear caracteres especiales.
+        </p>
+        <p>
+            La codificación de caracteres se debe elegir en el editor de páginas web que se utilice (en nuestro caso, Notepad++) y
+            reflejarlo en el código introduciendo una etiqueta &lt;meta&gt; en la cabecera de la página, de la siguiente manera:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=<b><i>codificación</i></b>&gt;
+</pre>
+        </div>
+
+        <p>
+            El parámetro codificacion deberá ser igual a la codificación que se haya elegido en el editor.
+            Las más usuales para poder escribir los caracteres españoles son utf-8 (recomendada por ser compatible a nivel mundial) y
+            iso-8859-1 (compatible a nivel de Europa occidental).
+        </p>
+        <p>Así, para indicar que una página está codificada en utf-8 escribiríamos:</p>
+        <div class="recuadro">
+<pre>
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8&gt;
+</pre>
+        </div>
+        <p>
+            http-equiv: indica una propiedad al navegador como si el propio servidor http (Web) hubiera generado dicha cabecera,
+            de ahí viene el nombre "http-equivalent".
+        </p>
+        <h3>La etiqueta &lt;title&gt; y las etiquetas &lt;meta&gt;</h3>
+        <p>
+            La etiqueta <b>&lt;title&gt;</b> sirve para introducir el título de la página. El título de la página es el que aparece en
+            la <b>barra superior de la ventana del navegador.</b>
+        </p>
+
+        <div class="recuadro">
+<pre>
+    <b>&lt;title&gt;</b>Título de la página<b>&lt;/title&gt;</b>
+</pre>
+        </div>
+        <p>La etiqueta <b>&lt;meta&gt;</b> se utiliza para varias funciones. Además, se pueden poner varias etiquetas meta en la misma página:</p>
+        <div class="recuadro">
+<pre>
+  &lt;meta name="author" content="<b><i>nombre del autor de la página</i></b>"&gt;
+  &lt;meta name="copyright" content="<b><i>nombre del propietario de la página</i></b>"&gt;
+  &lt;meta name="description" content="<b><i>descripción del contenido de la página</i></b>"&gt;
+  &lt;meta name="keywords" content="<b><i>Ciclos, Formativos, Informática, FP, DAW</i></b>"&gt;
+  &lt;meta name="date" content="<b><i>27 de enero de 2018 - Fecha de creación</i></b>"&gt;
+</pre>
+        </div>
+        <p>
+            El texto indicado en <b>"description"</b> es utilizado por los motores de búsqueda para indexar la página. Es el texto que suele aparecer
+            como resultado de la búsqueda realizada por un usuario.
+        </p>
+        <p>
+            La lista de palabras indicadas en <b>"keywords"</b> son por las que queremos que nuestra página sea localizable. La inclusión de palabras
+            no relacionadas con nuestro sitio con el fin de mejorar el posicionamiento web, se considera spam y puede ser
+            penalizado por los motores de búsqueda.
+        </p>
+        <p>La etiqueta <b>&lt;style&gt;</b> se utiliza para dar estilo a los elementos de la páginaweb.</p>
+        <div class="recuadro">
+<pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+    body{
+        background-color: #ffe066;
+    }
+    h1{
+        color: #ff9900;
+        text-align: justify;
+    }
+    p{
+        font-size: 15px;
+        font-family: Arial;
+    }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;h1&gt;Ejemplo de CSS&lt;/h1&gt;
+      &lt;p&gt;Esto es un parrafo&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+        </div>
+        <p>Copia el código de arriba en un archivo de texto (con el bloc de notas por ejemplo) con el nombre Ejemplo_2.html y luego observa el resultado en el navegador.</p>
+
+        <h2>El cuerpo</h2>
+        <p>
+            En el cuerpo de la página aparece la <b>información que se verá en la pantalla del navegador.</b>
+            En el cuerpo podrán aparecer todas aquellas etiquetas que
+            estudiaremos en las próximas secciones del tema.
+        </p>
+        <h4 style="color: black">&lt;body&gt;</h4>
+        <h4 style="color: black; text-decoration: underline">Atributos</h4>
+        <ul>
+            <li>
+                <b>id:</b> sirve para asignar un nombre único a un elemento. Se utiliza para identificar elementos en hojas de estilo y en scripts.
+            </li>
+            <li>
+                <b>class:</b> sirve para asignar un nombre de clase para varios elementos. Es posible usar el mismo nombre de clase para varios elementos.
+                Se usa para mejorar el rendimiento de las hojas de estilo.
+            </li>
+            <li>
+                <b>title:</b> sirve para agregar un comentario asociado a un elemento. Los navegadores muestran este comentario en una ventana emergente
+                cuando el ratón se sitúa sobre el elemento.
+            </li>
+            <li>
+                <b>style:</b> sirve para aplicar información de estilo a un elemento.
+            </li>
+        </ul>
+        <b><u>Atributos desaprobados:</u> background, text, link, alink, vlink, bgcolor.</b>
+        <p> Estos atributos no deben usarse, ya que la forma correcta es a través de hojas de estilo o con estilos en línea como en el siguiente ejemplo.</p>
+        <div class="recuadro">
+<pre>
+  &lt;body style="background-color: blue"&gt;
+      ..........
+  &lt;/body&gt;
+</pre>
+        </div>
+
+        <p>Observa que produce el mismo efecto el código de más abajo que si sustituimos la línea de <b>body</b> por la siguiente:</p>
+        <div class="recuadro">
+<pre>
+  &lt;body bgcolor: blue"&gt;
+</pre>
+        </div>
+        <br>
+        <div class="recuadro">
+<pre>
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd"&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Mi primera página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body style="background-color: blue"&gt;
+            &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+        </div>
+        <p>Guárdalos con los nombres Ejemplo_3.html y Ejemplo_4.html</p>
+        <h4 style="color: black"> Eventos Intrínsecos</h4>
+        <p>
+            Hay una serie de atributos que corresponden a eventos. Por ejemplo cuando se carga una página, cuando se hace click sobre un elemento, etc...
+        </p>
+        <p>
+            Para utilizar estos eventos intrínsecos hay que conocer un lenguaje script, que sirva par ejecutar una determinada acción cuando se produzca un evento
+        </p>
+        <p>
+            Ejemplo, modifica la etiqueta body del ejemplo anterior con el código de más abajo y observa el resultado.
+            Sálvalo como Ejemplo_5.html. Asegúrate de utilizar el carácter comilla simple.
+        </p>
+        <div class="recuadro">
+<pre>
+  &lt;body bgcolor: blue"&gt;
+</pre>
+        </div>
+        <h2>Comentarios</h2>
+        <p>Los comentarios se introducen entre los símbolos <b>&lt;!-- y --&gt;</b>. Los comentarios no se pueden anidar.</p>
+        <div class="recuadro">
+<pre>
+  &lt;!--Todo esto, aunque ocupe varias líneas, no aparece en la pantalla
+    ni afecta a la páginaweb. Se suelen utilizar para realizar anotaciones
+    útiles para el administrador, como fechas,explicaciones, etc.--&gt;
+</pre>
+        </div>
+        <h2>Caracteres especiales</h2>
+        <p>
+            Como hemos visto, las etiquetas HTML se incluyen entre los signos < y >. Además, los atributos van entre comillas (" ").
+            De esta manera, si introducimos alguno de esos caracteres en el código HTML, estaremos indicando al navegador que lo que
+            viene a continuación es una etiqueta o un atributo. Estos caracteres reciben el nombre de <b>caracteres especiales.</b>
+        </p>
+        <p>
+            Así pues, ¿qué haremos cuando queramos insertar en nuestra página web un carácter especial? La respuesta es que deberemos escribir un <b>código alternativo</b>.
+            En la siguiente tabla se incluyen los códigos para los caracteres especiales más comunes:
+        </p>
+        <table border="1" class="simbolos">
+            <tr>
+                <th>
+                    Símbolo
+                </th>
+                <th>
+                    Código
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    ©
+                </td>
+                <td>
+                    &#38;copy;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ®
+                </td>
+                <td>
+                    &#38;reg;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <
+                </td>
+                <td>
+                    &#38;lt;
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    >
+                </td>
+                <td>
+                    &#38;gt;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &
+                </td>
+                <td>
+                    &#38;amp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Espacio
+                </td>
+                <td>
+                    &#38;nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "
+                </td>
+                <td>
+                    &#38;quot;
+                </td>
+            </tr>
+        </table>
+        <p>
+            Por otro lado, existen una serie de problemas con los <b>caracteres de texto no ingleses</b> (letras con acento, eñes,etc.).
+            Depende de la codificación de caracteres empleada en la página web, estos caracteres no ingleses se verán o no se verán correctamente en la página.
+            Codificaciones de caracteres como <b>Unicode o ISO-8859-1 no presentan problemas</b>, mientras que otras como ASCII no mostrarán el contenido correctamente.
+            Por ello, existen también una serie de caracteres especiales para representar los caracteres no ingleses, que <b>funcionarán correctamente independientemente
+            de la codificación utilizada en la página.</b> En la tabla siguiente se recogen los españoles:
+        </p>
+        <table border="1" class="simbolos">
+            <tr>
+                <th>
+                    Símbolo
+                </th>
+                <th>
+                    Código
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    ñ
+                </td>
+                <td>
+                    &#38;ntilde;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    á
+                </td>
+                <td>
+                    &#38;aacute;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    é
+                </td>
+                <td>
+                    &#38;eacute;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    í
+                </td>
+                <td>
+                    &#38;iacute;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ó
+                </td>
+                <td>
+                    &#38;oacute;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ú
+                </td>
+                <td>
+                    &#38;uacute;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    à
+                </td>
+                <td>
+                    &#38;agrave;
+                </td>
+            </tr>
+        </table>
+        <h2>Validación del código HTML</h2>
+         <p>
+             Para verificar el código de una página HTML se puede consultar la dirección <a href="http://validator.w3.org/">http://validator.w3.org/</a>.
+             En esta página se puede insertar el código de la página que se quiera comprobar o bien subir el archivo que contiene dicho código.
+             Tras realizar la comprobación, ofrecerá un resultado sobre los errores que contiene.
+         </p>
+        <p>
+            <b>¡Ojo!</b> Para comprobar el código de una página web, dicho código deberá llevar <b>obligatoriamente</b> una <b>declaración de tipo de documento</b> y una indicación
+            de la <b>codificación de caracteres</b> que utiliza.
+        </p>
+        <p>
+            En el caso de que el resultado de la validación sea correcto, nos indicará con un mensaje que podemos incluir el siguiente elemento en nuestra página
+            para indicar que está escrita de acuerdo a los estándares del W3C:
+        </p>
+        <img src="../images/validhtml.png" id="validHTML">
+    </article>
+    <footer>
+        <a class="pie" href="#">Manual de HTML -</a>
+        <a class="pie" href="#">CSS -</a>
+        <a class="pie" href="#">Diseño de Interfaces Web -</a>
+        <a class="pie" href="#">DAW</a>
+    </footer>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 5</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+</head>
+<body>
+<header>
+    <img src="../images/Logo.png">
+    <h1 id="titulo">Estructura del texto</h1>
+</header>
+<main>
+    <aside>
+        <div>
+            <h4>HTML</h4>
+            <a href="../index.html" class="html">Introducción a HTML</a><br>
+            <a href="organizacion.html" class="html">Organización de un Sitio Web</a><br>
+            <a href="etiquetasBasicas.html" class="html">Etiquetas Básicas</a><br>
+            <a href="estructura.html" class="html" id="abierto">Estructura del texto</a><br>
+            <a href="formato.html" class="html">Formato del texto</a><br>
+            <a href="hipervinculos.html" class="html">Hipervínculos</a><br>
+            <a href="imagenes.html" class="html">Imágenes y multimedia</a><br>
+            <a href="listas.html" class="html">Listas</a><br>
+            <a href="tablas.html" class="html">Tablas</a><br>
+            <a href="marcos.html" class="html">Marcos</a><br>
+            <a href="agrupacion.html" class="html">Agrupación de Elementos</a><br>
+            <a href="capas.html" class="html">Capas</a><br>
+            <a href="formularios.html" class="html">Formularios</a><br>
+            <a href="extras.html" class="html">Extras</a><br>
+            <a href="xhtml.html" class="html">XHTML y HTML</a><br>
+            <a href="#" class="html">Bibliografía y enlaces</a><br>
+            <a href="#" class="html">Guía rápida de HTML (PDF)</a><br>
+        </div>
+        <hr>
+        <div>
+            <h4>CSS</h4>
+            <a href="#" class="css">Introducción a CSS</a><br>
+            <a href="#" class="css">Tipos de hojas de estilo</a><br>
+            <a href="#" class="css">Estructura documento CSS</a><br>
+            <a href="#" class="css">Reglas de estilo</a><br>
+            <a href="#" class="css">Criterios de selección</a><br>
+            <a href="#" class="css">Propiedades y valores</a><br>
+            <a href="#" class="css">Herencia y precedencia</a><br>
+            <a href="#" class="css">Ejemplos de background</a><br>
+            <a href="#" class="css">Ejemplos de texto</a><br>
+            <a href="#" class="css">Ejemplos de links y tablas</a><br>
+            <a href="#" class="css">Ejemplos de imagenes y bordes</a><br>
+            <a href="#" class="css">Diseño visual I</a><br>
+            <a href="#" class="css">Diseño visual II</a><br>
+            <a href="#" class="css">Ejemplos de homepages</a><br>
+            <a href="#" class="css">Validación de CSS</a><br>
+            <a href="#" class="css">Proyecto final</a><br>
+            <a href="#" class="css">Bibliografía y enlaces</a><br>
+            <a href="#" class="css">Guía rápida de CSS 2.1</a><br>
+        </div>
+    </aside>
+    <article>
+        <h1>Tipos de elementos</h1>
+        <p>En HTML disponemos de elementos en bloque y elementos en línea.</p>
+        <ul>
+            <li>
+                <b>Elementos de bloque:</b><br>
+                Son elementos que crean estructuras más grandes que pueden contener a los elementos de línea y a otros elementos de bloque.
+                Además siempre incorpora un salto de línea antes y después del mismo.
+            </li>
+            <li>
+                <b>Elementos de línea:</b><br>
+                Estos elementos solo pueden contener datos y a otros elementos de línea. Se colocará a continuación del elemento anterior, sin introducir ningún salto de línea..
+            </li>
+        </ul>
+        <h1>Estructura del texto</h1>
+        <p>
+            El texto es el tipo de contenido más habitual en las páginas web.
+            La correcta estructuración del texto facilitará la lectura de nuestra página por parte de otras personas.
+            En esta sección estudiaremos las etiquetas HTML más importantes para estructurar el texto de una página.
+        </p>
+        <h2>Escribir texto en una página web</h2>
+        <p>
+            Tal como hemos estudiado, el texto que escribamos dentro de las etiquetas &lt;body&gt; &lt;/body&gt; aparecerá en pantalla cuando se cargue la página.
+            No obstante, si hacemos la prueba y escribimos algún texto, observaremos lo siguiente:
+        </p>
+        <ul>
+            <li>
+                Aunque introduzcamos <b>más de un espacio</b> entre las palabras, sólamente se <b>muestra un único espacio</b> en el navegador.
+            </li>
+            <li>
+                Aunque insertemos un <b>salto de línea</b> en el código de la página (tecla <i>Enter</i>), <b>no aparece representado</b> cuando cargamos la página en el navegador.
+            </li>
+        </ul>
+        <p>
+            Esto se debe a que el lenguaje HTML se creó para estructurar texto. Ello quiere decir que para realizar cualquier cambio en la estructura del texto
+            (introducir una nueva frase mediante punto y aparte, crear un párrafo nuevo,...) habrá que utilizar una etiqueta. A continuación veremos las etiquetas más importantes.
+
+        </p>
+        <p>
+            Si deseamos insertar un espacio más del normal entre dos palabra es necesario insertar el carácter <b>&#38;nbsp;</b> (no-break space) por cada espacio que queramos añadir
+        </p>
+        <h2>Salto de línea</h2>
+        <p>
+            Cuando se desee insertar un cambio de línea en una página web se utilizará la etiqueta <b>&lt;br&gt;</b>. Esta etiqueta no tiene etiqueta de cierre. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+    Este
+    texto
+    aparece en
+    la misma línea.
+
+    Este &lt;br&gt; texto &lt;br&gt;
+    aparece &lt;br&gt; en &lt;br&gt;
+    líneas &lt;br&gt; distintas.
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+<pre>
+    Este texto aparece en la misma línea.
+
+    Este
+    texto
+    aparece
+    en
+    líneas
+    distintas.
+</pre>
+        </div>
+        <p>Esta etiqueta <b>no debe usarse más que cuando sea necesario</b>. En su lugar se suele agrupar el texto en párrafos, tal como veremos en el siguiente punto.</p>
+        <h2>Párrafos</h2>
+        <p>
+            El párrafo es la estructura más utilizada. Para indicar que un texto pertenece al mismo párrafo, se introduce dentro de las etiquetas <b>&lt;p&gt; &lt;/p&gt;</b>.
+            Cuando el párrafo termina con la etiqueta de cierre, se <b>introduce automáticamente un salto de línea.</b> Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;p&gt; Este texto forma parte del parrafo1 &lt;/p&gt;&lt;p&gt; Este texto forma parte del
+    parrafo2. Por eso está en otra línea&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+<pre>
+    Este texto forma parte del párrafo1.
+    Este texto forma parte del párrafo2. Por eso está en otra línea.
+</pre>
+        </div>
+        <p>Es un elemento de bloque y no puede contener otros elementos de bloque.</p>
+        <p>La etiqueta de cierre es opcional.</p>
+        <p>El navegador se encarga de que la línea de texto ocupe todo el ancho disponible, y si el ancho cambia, el texto se ajusta al nuevo ancho ocupando más o menos líneas</p>
+        <p>Todo texto de un HTML que no sea encabezado, lista o celda de una tabla debe estar dentro de un elemento <b>&lt;p&gt;</b>.</p>
+        <h2>Encabezados</h2>
+        <p>
+            Los encabezados son <b>bloques que destacan el texto</b> que contienen. Se utilizan como delimitadores de sección dentro de las páginas web. Existen 6 tipos de encabezado,
+            representados por las etiquetas siguientes (en orden de más a menos importantes):<br>
+            <b>&lt;h1 | h2 | h3 | h4 | h5 | h6&gt;</b><br>
+            Los encabezados son elementos de bloque.<br>
+            Los encabezados van a definir el esquema del documento, por lo tanto, debemos utilizarlas de forma coherente. No tiene sentido tener un &lt;h2&gt; si no tenemos antes un &lt;h1&gt;, por ejemplo.
+            Las etiquetas de cierre son obligatorias.<br>
+            Así, el código:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;body&gt;
+        &lt;h1&gt;Este es un encabezado de nivel 1&lt;/h1&gt;
+        &lt;h2&gt;Este es un encabezado de nivel 2&lt;/h2&gt;
+        &lt;h3&gt;Este es un encabezado de nivel 3&lt;/h3&gt;
+        &lt;h4&gt;Este es un encabezado de nivel 4&lt;/h4&gt;
+        &lt;h5&gt;Este es un encabezado de nivel 5&lt;/h5&gt;
+        &lt;h6&gt;Este es un encabezado de nivel 6&lt;/h6&gt;
+    &lt;/body&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+<pre>
+        <h1>Este es un encabezado de nivel 1</h1>
+        <h2>Este es un encabezado de nivel 2</h2>
+        <h3>Este es un encabezado de nivel 3</h3>
+        <h4 style="color: black">Este es un encabezado de nivel 4</h4>
+        <h5>Este es un encabezado de nivel 5</h5>
+        <h6>Este es un encabezado de nivel 6</h6>
+</pre>
+        </div>
+        <p>
+            <b>Los encabezados también introducen un salto de línea al final.</b> El tamaño de la letra y el tipo de destacado dependen del navegador que se utilice.
+            <b>La etiqueta de encabezado no debe utilizarse dentro de una etiqueta de párrafo y viceversa.</b>
+        </p>
+        <h2>Línea horizontal</h2>
+        <p>Es una línea que se suele utilizar de separador. Para ello se utiliza la etiqueta <b>&lt;hr&gt;</b>. Así, el código:</p>
+        <div class="recuadro">
+<pre>
+    &lt;p&gt;Un párrafo&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Otro párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+<pre>
+    <p>Un párrafo</p>
+    <hr>
+    <p>Otro párrafo</p>
+</pre>
+        </div>
+        <p>La línea o regla horizontal también introduce un salto de línea al final.</p>
+        <h1>Ejercicio 1:</h1>
+        <p>Realiza una página web cuya apariencia sea similar a la que aparece en el siguiente <a href="../ejercicios/ejercicio1.pdf" target="_blank">enlace</a>. Guárdala con el nombre <b>ejercicio1.html</b>.</p>
+
+    </article>
+    <footer>
+        <a class="pie" href="#">Manual de HTML -</a>
+        <a class="pie" href="#">CSS -</a>
+        <a class="pie" href="#">Diseño de Interfaces Web -</a>
+        <a class="pie" href="#">DAW</a>
+    </footer>
+</main>
+
+</body>
+</html>
