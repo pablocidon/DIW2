@@ -1,10 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Práctica 5</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
 </head>
 <body>
+<header>
+    <img src="../images/Logo.png">
+    <h1 id="titulo">Imágenes</h1>
+</header>
+<main>
+    <aside>
+        <div>
+            <h4>HTML</h4>
+            <a href="../index.html" class="html">Introducción a HTML</a><br>
+            <a href="organizacion.html" class="html">Organización de un Sitio Web</a><br>
+            <a href="etiquetasBasicas.html" class="html">Etiquetas Básicas</a><br>
+            <a href="estructura.html" class="html">Estructura del texto</a><br>
+            <a href="formato.html" class="html">Formato del texto</a><br>
+            <a href="hipervinculos.html" class="html">Hipervínculos</a><br>
+            <a href="imagenes.html" class="html" id="abierto">Imágenes y multimedia</a><br>
+            <a href="listas.html" class="html">Listas</a><br>
+            <a href="tablas.html" class="html">Tablas</a><br>
+            <a href="marcos.html" class="html">Marcos</a><br>
+            <a href="agrupacion.html" class="html">Agrupación de Elementos</a><br>
+            <a href="capas.html" class="html">Capas</a><br>
+            <a href="formularios.html" class="html">Formularios</a><br>
+            <a href="extras.html" class="html">Extras</a><br>
+            <a href="xhtml.html" class="html">XHTML y HTML</a><br>
+            <a href="#" class="html">Bibliografía y enlaces</a><br>
+            <a href="#" class="html">Guía rápida de HTML (PDF)</a><br>
+        </div>
+        <hr>
+        <div>
+            <h4>CSS</h4>
+            <a href="#" class="css">Introducción a CSS</a><br>
+            <a href="#" class="css">Tipos de hojas de estilo</a><br>
+            <a href="#" class="css">Estructura documento CSS</a><br>
+            <a href="#" class="css">Reglas de estilo</a><br>
+            <a href="#" class="css">Criterios de selección</a><br>
+            <a href="#" class="css">Propiedades y valores</a><br>
+            <a href="#" class="css">Herencia y precedencia</a><br>
+            <a href="#" class="css">Ejemplos de background</a><br>
+            <a href="#" class="css">Ejemplos de texto</a><br>
+            <a href="#" class="css">Ejemplos de links y tablas</a><br>
+            <a href="#" class="css">Ejemplos de imagenes y bordes</a><br>
+            <a href="#" class="css">Diseño visual I</a><br>
+            <a href="#" class="css">Diseño visual II</a><br>
+            <a href="#" class="css">Ejemplos de homepages</a><br>
+            <a href="#" class="css">Validación de CSS</a><br>
+            <a href="#" class="css">Proyecto final</a><br>
+            <a href="#" class="css">Bibliografía y enlaces</a><br>
+            <a href="#" class="css">Guía rápida de CSS 2.1</a><br>
+        </div>
+    </aside>
+    <article>
+        <h1>Imágenes</h1>
+        <p>Para incluir gráficos e imágenes en nuestras páginas utilizaremos la etiqueta <img>. No tiene etiqueta de cierre. Se trata de un elemento en línea.</p>
+
+        <p>Su sintaxis es:</p>
+        <div class="recuadro">
+<pre>
+    &lt;img src="<b><i>nombre_fichero_imagen</i></b>" alt="<b><i>texto_alternativo_imagen</i></b>"&gt;
+</pre>
+        </div>
+        <p>El atributo <b><i>src</i></b> especifica la URI de acceso a la imagen, el nombre del fichero que contiene el gráfico. Los formatos estándar en la red son GIF, JPEG y PNG.</p>
+
+        <p>
+            El atributo <b><i>alt</i></b> especifica el texto que se mostrará en lugar del gráfico en aquellos navegadores que no sean capaces de mostrarlos y
+            en el supuesto de que el usuario los haya desactivado. Es obligatorio ponerlo para cumplir con los estándares del W3C.
+        </p>
+        <p>El atributo <b><i>name</i></b> identifica la imagen para su manejo posterior en hoja de estilo o script.</p>
+        <p>
+            Los atributos <b><i>height, width</i></b> Establecen la altura y ancho respectívamente, en píxeles o en porcentaje, cuando se especifican el navegador
+            debe modificar las medidas originales de la imagen a las especificadas.
+        </p>
+        <p>El atributo <b><i>usemap</i></b> sirve para asociar a la imagen un mapa de imágenes (como un marcador).</p>
+        <p>
+            Existen más <b>atributos</b> admitidos por la etiqueta. Se pueden consultar en la guía de HTML. No obstante, <b>la mayoría no se utilizan</b>,
+            ya que se han quedado obsoletos y es recomendable utilizar las hojas de estilo para conseguir los efectos deseados.
+        </p>
+        <h2>Ejercicio 5:</h2>
+        <p>Realiza una página web que contenga tres párrafos (escribe el texto que tú quieras). A continuación, descárgate la siguiente <a href=".">imagen</a>.
+            Modifica las dimensiones de la imagen en cada posición. Incluye la imagen en los siguientes sitios:
+        </p>
+        <ul>
+            <li>Dentro del primer párrafo, al principio.</li>
+            <li>Dentro del segundo párrafo, al final.</li>
+            <li> Entre el segundo y el tercer párrafo, dentro de un párrafo independiente.</li>
+        </ul>
+        <p>Guarda el ejercicio con el nombre <b>ejercicio5.html.</b></p>
+
+        <h2>Imágenes y enlaces</h2>
+        <p>Para hacer que un gráfico se convierta en un enlace, hay que escribir la etiqueta <img> dentro de las etiquetas &lt;a&gt; y &lt;/a&gt;, como en el siguiente ejemplo:</p>
+        <div class="recuadro">
+<pre>
+    &lt;a href="<b><i>destino_del_enlace</i></b>"&gt;&lt;img src="<b><i>nombre_fichero_imagen</i></b>"
+    alt="<b><i>texto_alternativo</i></b>&gt;&lt;/a&gt;
+</pre>
+        </div>
+
+        <h2>Ejercicio 6:</h2>
+        <p>A partir del ejercicio 5, transforma las imágenes en enlaces que vayan a la página del IES Marenostrum. Guarda el ejercicio con el nombre <b>ejercicio6.html.</b></p>
+
+        <h2>Mapa de imágenes</h2>
+        <p>Para crear un mapa de imágenes, hay que usar la etiqueta <b>&lt;map&gt;</b>. La etiqueta final es obigatoria.</p>
+
+        <b>&lt;area&gt;</b>
+
+        <p>Para especificar una región geométrica del mapa y el vínculo asociado a esa región. No tiene etiqueta final</p>
+
+        <b>Atributos:</b>
+        <ul>
+            <li>
+                <b>shape:</b> Especifica el tipo de región con los valores: default, rect, circle y poly.
+                <ul>
+                    <li>default (región completa)</li>
+                    <li>rect (rectangular)=(x,y) vértice sperior izquierdo, (x,y) vértice inferior derecho.</li>
+                    <li>circle (circular) = (x,y) centro, radio.</li>
+                    <li>poly (poligonal)=(x,y) 1ºpunto, (x,y) 2ºpunto,....,(x,y) último punto,</li>
+                </ul>
+            </li>
+            <li>
+                <b>coords:</b> indica la posición en pantalla, son valores de longitud partiendo de la esquina superior izquierda de la pantalla y separados por comas
+            </li>
+        </ul>
+        <div class="recuadro">
+<pre>
+    &lt;body&gt;
+        &lt;img src="mapa.png" usemap="#mapa1" alt="mapa 4 colores"&gt;
+        &lt;map name="#mapa1"&gt;
+            &lt;area href="amarillo.html" alt="amarillo" shape="rect"
+                coords="0,0,190,190"&gt;
+            &lt;area href="verde.html" alt="verde" shape="rect"
+                coords="210,0,400,190"&gt;
+            &lt;area href="rojo.html" alt="rojo" shape="rect"
+                coords="0,210,190,400"&gt;
+            &lt;area href="azul.html" alt="azul" shape="rect"
+                coords="210,210,400,400"&gt;
+        &lt;/map&gt;
+    &lt;/body&gt;
+</pre>
+        </div>
+        <p>Observa que el marcador "#mapa1" usado en el atributo <b>usemap</b> de la imagen debe ser igual que el usado en el atributo <b>name</b> del mapa.</p>
+
+        <h2>Ejercicio 6_2:</h2>
+        <p>Dibuja con el Paint una imagen con los cuatro colores con las zonas que se indican en el código de arriba, ver imagen: <a href="../images/Ej6_2_colores.jpg">imagen</a>.</p>
+        <p>Escribe los cuatro html con un párrafo que ponga "Región Amarilla" y guardalo con nombre amarillo.html. Haz lo mismo con el verde, rojo y azul.</p>
+        <p>Utiliza el código y observa que se abren los html de nombre amarillo, verde, azul y rojo cuando haces click en cada una de las zonas</p>
+        <p>Guarda el ejercicio con el nombre <b>ejercicio6_2.html.</b></p>
+
+        <h2>Ejercicio 6_3:</h2>
+        <p>Añade el atributo title como se indica en el código para cada una de las zonas.</p>
+        <p>Observa que al situar el ratón en cada zona, aparece un el texto que se ha puesto en cada una de las zonas.</p>
+        <p>Guarda el ejercicio con el nombre <b>ejercicio6_3.html.</b></p>
+        <div class="recuadro">
+<pre>
+  &lt;area href="amarillo.html" alt="amarillo" shape="rect" coords="0,0,190,190"&gt;
+</pre>
+        </div>
+        <p>Cuando se quiere marcar una zona que es irregular habrá queutilizar como Shape "poly" que es una polilínea e ir escribiendo las coordenadas de todos los puntos.</p>
+    </article>
+    <footer>
+        <p class="pie">Manual de HTML - CSS - Diseño de Interfaces Web - DAW</p>
+        <!--<a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>-->
+    </footer>
+</main>
 
 </body>
 </html>
