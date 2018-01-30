@@ -1,10 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Práctica 5</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
 </head>
 <body>
+<header>
+    <img src="../images/Logo.png">
+    <h1 id="titulo">Listas</h1>
+</header>
+<main>
+    <aside>
+        <div>
+            <h4>HTML</h4>
+            <a href="../index.html" class="html">Introducción a HTML</a><br>
+            <a href="organizacion.html" class="html">Organización de un Sitio Web</a><br>
+            <a href="etiquetasBasicas.html" class="html">Etiquetas Básicas</a><br>
+            <a href="estructura.html" class="html">Estructura del texto</a><br>
+            <a href="formato.html" class="html">Formato del texto</a><br>
+            <a href="hipervinculos.html" class="html">Hipervínculos</a><br>
+            <a href="imagenes.html" class="html">Imágenes y multimedia</a><br>
+            <a href="listas.html" class="html" id="abierto">Listas</a><br>
+            <a href="tablas.html" class="html">Tablas</a><br>
+            <a href="marcos.html" class="html">Marcos</a><br>
+            <a href="agrupacion.html" class="html">Agrupación de Elementos</a><br>
+            <a href="capas.html" class="html">Capas</a><br>
+            <a href="formularios.html" class="html">Formularios</a><br>
+            <a href="extras.html" class="html">Extras</a><br>
+            <a href="xhtml.html" class="html">XHTML y HTML</a><br>
+            <a href="#" class="html">Bibliografía y enlaces</a><br>
+            <a href="#" class="html">Guía rápida de HTML (PDF)</a><br>
+        </div>
+        <hr>
+        <div>
+            <h4>CSS</h4>
+            <a href="#" class="css">Introducción a CSS</a><br>
+            <a href="#" class="css">Tipos de hojas de estilo</a><br>
+            <a href="#" class="css">Estructura documento CSS</a><br>
+            <a href="#" class="css">Reglas de estilo</a><br>
+            <a href="#" class="css">Criterios de selección</a><br>
+            <a href="#" class="css">Propiedades y valores</a><br>
+            <a href="#" class="css">Herencia y precedencia</a><br>
+            <a href="#" class="css">Ejemplos de background</a><br>
+            <a href="#" class="css">Ejemplos de texto</a><br>
+            <a href="#" class="css">Ejemplos de links y tablas</a><br>
+            <a href="#" class="css">Ejemplos de imagenes y bordes</a><br>
+            <a href="#" class="css">Diseño visual I</a><br>
+            <a href="#" class="css">Diseño visual II</a><br>
+            <a href="#" class="css">Ejemplos de homepages</a><br>
+            <a href="#" class="css">Validación de CSS</a><br>
+            <a href="#" class="css">Proyecto final</a><br>
+            <a href="#" class="css">Bibliografía y enlaces</a><br>
+            <a href="#" class="css">Guía rápida de CSS 2.1</a><br>
+        </div>
+    </aside>
+    <article>
+        <h1>Listas</h1>
+        <h2>Listas convencionales</h2>
+        <p>
+            Las listas se crean con las etiquetas <b>&lt;ul&gt; &lt;/ul&gt;</b> (listas desordenadas) y <b>&lt;ol&gt; &lt;/ol&gt;</b> (listas ordenadas).
+            Entre las etiquetas de apertura y cierre, que es obligatoria, cada elemento de la lista se tiene que crear utilizando las etiquetas <b>&lt;li&gt; &lt;/li&gt;.</b>
+            La etiqueta de cierre <b>&lt;/li&gt;</b> es opcional, aunque recomendable. <b>&lt;li&gt;</b> es un objeto de lista que puede contener otros elementos de bloque como párrafos,
+            imágenes, enlaces o directamente el texto. A continuación puedes ver un ejemplo:
+        </p>
+        <div class="recuadro">
+<pre>
+    <b>&lt;ul&gt;</b>
+        <b>&lt;li&gt;</b>Elemento 1<b>&lt;/li&gt;</b>
+        <b>&lt;li&gt;</b>Elemento 2<b>&lt;/li&gt;</b>
+        <b>&lt;li&gt;</b>Elemento 3<b>&lt;/li&gt;</b>
+    <b>&lt;/ul&gt;</b>
+</pre>
+        </div>
+
+        <p>El resultado sería:</p>
+        <div class="recuadro">
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+
+        <p>Atributos de <b>&lt;ul&gt;:</b></p>
+        <ul>
+            <li>
+                <b>type:</b> Indica el tipo de símbolo utilizado y puede tomar los valores "disc" (disco), "square" (cuadrado) y "circle" (círculo). Está en Desuso
+            </li>
+            <li>
+                <b>compact:</b> Si aparece indica al navegador que la ista debe compactarse.
+            </li>
+        </ul>
+
+        <p>Atributos de <b>&lt;ol&gt;:</b></p>
+        <ul>
+            <li>
+                <b>type:</b> Indica el tipo de secuencia de lista y puede tomar los valores "1" (números enteros), "a" (letras minúsculas), "A" (letras mayúsculas), "i"
+                (números romanos minúsculas), "I" (números romanos mayúsculas). Está en Desuso
+            </li>
+            <li>
+                <b>start:</b> Indica el número del primer elemento de la lista por el que debe empezar. Está en desuso.
+            </li>
+        </ul>
+        <p>Se puede personalizar las opciones de las listas. Para ello, consulta la guía de referencia rápida de HTML de los apuntes.</p>
+
+        <h3>Ejercicio 7:</h3>
+        <p>Realiza una página web cuya apariencia sea similar a la que aparece en el siguiente <a href="../ejercicios/ejercicio_7.pdf">enlace</a>. Guárdala con el nombre <b>ejercicio7.html.</b></p>
+
+        <h3>Ejercicio 8:</h3>
+        <p>Transforma el ejercicio 7 para que cada elemento de la lista se convierta un enlace a una página web distinta. Guárdala con el nombre <b>ejercicio8.html.</b></p>
+        <h3>Listas anidadas</h3>
+        <p>Para realizar <b>listas anidadas</b> hay que incluir una estructura &lt;ul&gt; o &lt;ol&gt; dentro del elemento &lt;li&gt; que contendrá la lista anidada. Por ejemplo:</p>
+        <div class="recuadro">
+<pre>
+    <b>&lt;ul&gt;</b>
+        <b>&lt;li&gt;</b>Elemento 1<b>&lt;/li&gt;</b>
+        <b>&lt;ul&gt;</b>
+            <b>&lt;li&gt;</b>Elemento 1.1<b>&lt;/li&gt;</b>
+            <b>&lt;li&gt;</b>Elemento 1.2<b>&lt;/li&gt;</b>
+            <b>&lt;li&gt;</b>Elemento 1.3<b>&lt;/li&gt;</b>
+        <b>&lt;/ul&gt;</b>
+        <b>&lt;li&gt;</b>Elemento 2<b>&lt;/li&gt;</b>
+    <b>&lt;/ul&gt;</b>
+</pre>
+        </div>
+        <p>El resultado sería:</p>
+        <div class="recuadro">
+            <ul>
+                <li>Elemento 1</li>
+                <ul>
+                    <li>Elemento 1.1</li>
+                    <li>Elemento 1.2</li>
+                    <li>Elemento 1.3</li>
+                </ul>
+                <li>Elemento 2</li>
+            </ul>
+        </div>
+        <h3>Ejercicio 9:</h3>
+        <p>Realiza una página web cuya apariencia sea similar a la que aparece en el siguiente <a href="../ejercicios/ejercicio_9.pdf">enlace</a>. Guárdala con el nombre <b>ejercicio9.html.</b></p>
+        <h3>Listas de definición</h3>
+        <p>
+            Las listas de definiciónse crean con las etiquetas <b>&lt;dl&gt; &lt;/dl&gt;.</b> La diferencia de este tipo de listas con las anteriores es que tienen dos partes: el término de la definición,
+            que se crea utilizando las etiquetas <b>&lt;dt&gt; &lt;/dt&gt;,</b> y la definición, que se crea utilizando las etiquetas <b>&lt;dd&gt; &lt;/dd&gt;.</b> Todo el texto aparece con sangría.
+            La etiqueta de cierre <b>&lt;/dl&gt;</b> es obligatoria. Las etiquetas de cierre <b>&lt;/dt&gt; y &lt;/dd&gt;</b> son opcionales. A continuación puedes ver un ejemplo:
+        </p>
+        <div class="recuadro">
+<pre>
+    <b>&lt;dl&gt;</b>
+        <b>&lt;dt&gt;</b>Coche<b>&lt;/dt&gt;</b>
+        <b>&lt;dd&gt;</b>Vehículo automóvil destinado al transporte de personas<b>&lt;/dd&gt;</b>
+
+        <b>&lt;dt&gt;</b>Tren<b>&lt;/dt&gt;</b>
+        <b>&lt;dd&gt;</b>Medio de transporte que circula sobre railes<b>&lt;/dd&gt;</b>
+    <b>&lt;/dl&gt;</b>
+</pre>
+        </div>
+        <p>El resultado sería:</p>
+        <div class="recuadro">
+        <dl style="margin-left: 5%">
+            <dt>Coche</dt>
+            <dd>Vehículo automóvil destinado al transporte de personas</dd>
+
+            <dt>Tren</dt>
+            <dd>Medio de transporte que circula sobre railes</dd>
+        </dl>
+        </div>
+        <h3>Ejercicio 10:</h3>
+        <p>Realiza una página web cuya apariencia sea similar a la que aparece en el siguiente <a href="../ejercicios/ejercicio_10.pdf">enlace</a>. Guárdala con el nombre <b>ejercicio10.html.</b></p>
+    </article>
+    <footer>
+        <p class="pie">Manual de HTML - CSS - Diseño de Interfaces Web - DAW</p>
+        <!--<a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>-->
+    </footer>
+</main>
 
 </body>
 </html>
