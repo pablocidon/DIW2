@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CAROUSEL</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/estilos.css">
+</head>
+<body>
+    <div class="container">
+         <br>
+        <div class="col-md-12">
+            <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/paisaje_nieve.jpg" class="img-responsive" alt="" style="width: 100%">
+                        <div class="carousel-caption hidden-xs hidden-sm">
+                            <h3>Este es nuestro slide #1</h3>
+                            <p>Lorem ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/paisaje_nieve.jpg" class="img-responsive" alt="" style="width: 100%">
+                        <div class="carousel-caption hidden-xs hidden-sm">
+                            <h3>Este es nuestro slide #2</h3>
+                            <p>Lorem ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/paisaje_nieve.jpg" class="img-responsive" alt="" style="width: 100%">
+                        <div class="carousel-caption hidden-xs hidden-sm">
+                            <h3>Este es nuestro slide #3</h3>
+                            <p>Lorem ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" href="bootstrap-3.3.7-dist/js/jquery.js"></script>
+    <script type="text/javascript" href="bootstrap-3.3.7-dist/js/jquery-latest.js"></script>
+    <script type="text/javascript" href="bootstrap-3.3.7-dist/js/bootstrap.js/bootstrap.min.js"></script>
+</body>
+</html>
