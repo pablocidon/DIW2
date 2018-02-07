@@ -17,14 +17,16 @@ main,footer{
 }
 article{
     background-color: rgb(245,245,245);
-    width: 74.09%;
+    width: 75.05%;
     margin-top: 0px ;
     border-color: #d9d9d9;
     border-style: solid;
+    border-top-style: none;
+    border-right-style: none;
     border-width: 5px;
     float: left;
-    margin-left: 5%;
-    margin-bottom: 2.5%;
+    margin-left: 4.4%;
+    margin-bottom: 2%;
     text-align: justify;
 }
 aside{
@@ -78,10 +80,25 @@ article>*{
 }
 footer{
     text-align: right;
-    height: 2125px;
 }
 .pie{
-    margin-bottom: 2.5%;
     color: gray;
     text-decoration: none;
+}
+#organizacion{
+   width: 50%;
+    margin-left: 25%;
+}
+table{
+    border-color: black;
+    border-style: solid;
+}
+.simbolos{
+    margin-left: 40%;
+}
+#validHTML{
+    margin-left: 45%;
+}
+h2{
+    font-size: 22px;
 }
