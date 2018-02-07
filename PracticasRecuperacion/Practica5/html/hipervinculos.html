@@ -1,10 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Práctica 5</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../estilos/estilos.css"/>
 </head>
 <body>
+<header>
+    <img src="../images/Logo.png">
+    <h1 id="titulo">Hipervínculos</h1>
+</header>
+<main>
+    <aside>
+        <div>
+            <h4>HTML</h4>
+            <a href="../index.html" class="html">Introducción a HTML</a><br>
+            <a href="organizacion.html" class="html">Organización de un Sitio Web</a><br>
+            <a href="etiquetasBasicas.html" class="html">Etiquetas Básicas</a><br>
+            <a href="estructura.html" class="html">Estructura del texto</a><br>
+            <a href="formato.html" class="html">Formato del texto</a><br>
+            <a href="hipervinculos.html" class="html" id="abierto">Hipervínculos</a><br>
+            <a href="imagenes.html" class="html">Imágenes y multimedia</a><br>
+            <a href="listas.html" class="html">Listas</a><br>
+            <a href="tablas.html" class="html">Tablas</a><br>
+            <a href="marcos.html" class="html">Marcos</a><br>
+            <a href="agrupacion.html" class="html">Agrupación de Elementos</a><br>
+            <a href="capas.html" class="html">Capas</a><br>
+            <a href="formularios.html" class="html">Formularios</a><br>
+            <a href="extras.html" class="html">Extras</a><br>
+            <a href="xhtml.html" class="html">XHTML y HTML</a><br>
+            <a href="#" class="html">Bibliografía y enlaces</a><br>
+            <a href="#" class="html">Guía rápida de HTML (PDF)</a><br>
+        </div>
+        <hr>
+        <div>
+            <h4>CSS</h4>
+            <a href="#" class="css">Introducción a CSS</a><br>
+            <a href="#" class="css">Tipos de hojas de estilo</a><br>
+            <a href="#" class="css">Estructura documento CSS</a><br>
+            <a href="#" class="css">Reglas de estilo</a><br>
+            <a href="#" class="css">Criterios de selección</a><br>
+            <a href="#" class="css">Propiedades y valores</a><br>
+            <a href="#" class="css">Herencia y precedencia</a><br>
+            <a href="#" class="css">Ejemplos de background</a><br>
+            <a href="#" class="css">Ejemplos de texto</a><br>
+            <a href="#" class="css">Ejemplos de links y tablas</a><br>
+            <a href="#" class="css">Ejemplos de imagenes y bordes</a><br>
+            <a href="#" class="css">Diseño visual I</a><br>
+            <a href="#" class="css">Diseño visual II</a><br>
+            <a href="#" class="css">Ejemplos de homepages</a><br>
+            <a href="#" class="css">Validación de CSS</a><br>
+            <a href="#" class="css">Proyecto final</a><br>
+            <a href="#" class="css">Bibliografía y enlaces</a><br>
+            <a href="#" class="css">Guía rápida de CSS 2.1</a><br>
+        </div>
+    </aside>
+    <article>
+        <h1>Hipervínculos</h1>
+        <p>
+            Los hipervínculos son enlaces que permiten acceder a otro documento cuando se pincha sobre ellos.
+            Son los que posibilitan navegar de una página web a otra. Para insertar un hipervínculo en una página web se utiliza la etiqueta &lt;a&gt;.
+            Esta etiqueta admite varios parámetros que se pueden consultar en la guía de referencia rápida.
+        </p>
+        <p>La etiqueta de cierre es obligatoria.</p>
+        <p>Es un elemento de línea por lo que puede estar dentro de un párrafo, lista, etc..., a su vez <b>&lt;a&gt;</b> puede contener otros elementos en línea excepto a sí mismo.</p>
+        <h4 style="color: black">Atributos:</h4>
+        <ul>
+            <li>
+                <b>name:</b> Sirve para nombrar un ancla o marcador que será el destino del enlace.
+            </li>
+            <li>
+                <b>href:</b> Sirve para especificar la URI (Uniform Resource Identifier) destino del hipervínculo.
+            </li>
+            <li>
+                <b>target:</b> Establece el marco (frame) de destino (por defecto se toma la ventana actual). Valores posible: _blank, _self, _parent, _top.
+            </li>
+        </ul>
+        <p>Su estructura básica es:</p>
+        <div class="recuadro">
+<pre>
+    &lt;a href="<i>destino</i>"Texto del enlace&lt;/a&gt;
+</pre>
+        </div>
+        <p>El valor de destino puede ser:</p>
+        <ul>
+            <li><b>Una página web:</b> <i>http://www.google.es</i></li>
+            <li><b>Una página web almacenada localmente (ruta global):</b> <i>c:\datos\pagina1.html</i></li>
+            <li><b>Una página web almacenada localmente (ruta relativa):</b> <i>./carpeta1/pagina1.html</i></li>
+            <li><b>Un documento (pdf, imagen, archivo ejecutable, zip,...) almacenado localmente (ruta global):</b> <i>c:\datos\documento1.pdf</i></li>
+            <li><b>Un documento (pdf, imagen, archivo ejecutable, zip,...) almacenado localmente (ruta relativa):</b> <i>./documentos/documento1.pdf</i></li>
+        </ul>
+        <p>
+            ¡Ojo! En las rutas globales, el separador entre carpetas es distinto para sistemas operativos Windows (se utiliza \)
+            y Linux (se utiliza /). Además, no es conveniente trabajar con nombres de carpetas que contengan caracteres
+            no ingleses (eñes, acentos,...) o espacios en blanco solo suelen dar disgustos.
+        </p>
+        <p>
+            En cuanto a las rutas relativas, hay que recordar que el directorio punto (.) significa directorio actual
+            y el directorio dos puntos (..) la carpeta superior. Por ejemplo, la ruta ./carpeta1/doc1.html hace referencia
+            al archivo doc1.html que se encuentra dentro de una carpeta llamada carpeta1 que está en el mismo directorio que la página actual.
+        </p>
+        <h2>Anclas</h2>
+        <p>Es posible crear enlaces que nos lleven a un punto concreto dentro de un determinado documento. Para ello se utilizan las <b>anclas.</b></p>
+        <p>
+            En primer lugar es necesario definir dentro del documento HTML el punto al que queremos llegar. Para ello se utiliza también la etiqueta
+            &lt;a&gt;, pero con el atributo name, que contendrá el nombre que le queramos dar al ancla:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;a href="<i>nombreAncla</i>"&gt;Texto del enlace&lt;/a&gt;
+</pre>
+        </div>
+        <p>
+            Una vez establecida el ancla, para llegar a ella crearemos un enlace que contendrá como destino el nombre del ancla a la que
+            queramos llegar precedida del carácter #. Si el ancla a la que queremos ir está en otra página distinta, el destino del enlace
+            será el nombre de la página seguido a continuación del símbolo # y el nombre del ancla. Por ejemplo:
+        </p>
+        <div class="recuadro">
+<pre>
+  &lt;a href="#ancla1"&gt;Enlace al ancla dentro de la misma página&lt;/a&gt;
+  &lt;a href="./pagina2.html#ancla1"&gt;Enlace al ancla que está dentro
+  de la página 2&lt;/a&gt;
+</pre>
+        </div>
+        <p>También es posible utilizar como marcador de posición un elemento ya existente en la página, en lugar de crear un nuevo marcador.</p>
+        <p>Supongamos que tenemos</p>
+
+
+        <p>El resultado es el mismo que con el marcador &lt;a name&gt;</p>
+
+
+        <h2>Ejercicio 3:</h2>
+        <p>Realiza una página web cuya apariencia sea similar a la que aparece en el siguiente <a href="../ejercicios/ejercicio_3.pdf" target="_blank">enlace</a>. Guárdala con el nombre <b>ejercicio3.html.</b></p>
+
+        <h2>Ejercicio 4:</h2>
+        <p>Realiza una página web cuya apariencia sea similar a la que aparece en el siguiente <a href="../ejercicios/ejercicio_4.pdf" target="_blank">enlace</a>. Guárdala con el nombre <b>ejercicio4.html.</b></p>
+    </article>
+    <footer>
+        <p class="pie">Manual de HTML - CSS - Diseño de Interfaces Web - DAW</p>
+        <!--<a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>-->
+    </footer>
+</main>
 
 </body>
 </html>

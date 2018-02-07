@@ -1,10 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Práctica 5</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../estilos/estilos.css"/>
 </head>
 <body>
+<header>
+    <img src="../images/Logo.png">
+    <h1 id="titulo">Formato del texto</h1>
+</header>
+<main>
+    <aside>
+        <div>
+            <h4>HTML</h4>
+            <a href="../index.html" class="html">Introducción a HTML</a><br>
+            <a href="organizacion.html" class="html">Organización de un Sitio Web</a><br>
+            <a href="etiquetasBasicas.html" class="html">Etiquetas Básicas</a><br>
+            <a href="estructura.html" class="html">Estructura del texto</a><br>
+            <a href="formato.html" class="html" id="abierto">Formato del texto</a><br>
+            <a href="hipervinculos.html" class="html">Hipervínculos</a><br>
+            <a href="imagenes.html" class="html">Imágenes y multimedia</a><br>
+            <a href="listas.html" class="html">Listas</a><br>
+            <a href="tablas.html" class="html">Tablas</a><br>
+            <a href="marcos.html" class="html">Marcos</a><br>
+            <a href="agrupacion.html" class="html">Agrupación de Elementos</a><br>
+            <a href="capas.html" class="html">Capas</a><br>
+            <a href="formularios.html" class="html">Formularios</a><br>
+            <a href="extras.html" class="html">Extras</a><br>
+            <a href="xhtml.html" class="html">XHTML y HTML</a><br>
+            <a href="#" class="html">Bibliografía y enlaces</a><br>
+            <a href="#" class="html">Guía rápida de HTML (PDF)</a><br>
+        </div>
+        <hr>
+        <div>
+            <h4>CSS</h4>
+            <a href="#" class="css">Introducción a CSS</a><br>
+            <a href="#" class="css">Tipos de hojas de estilo</a><br>
+            <a href="#" class="css">Estructura documento CSS</a><br>
+            <a href="#" class="css">Reglas de estilo</a><br>
+            <a href="#" class="css">Criterios de selección</a><br>
+            <a href="#" class="css">Propiedades y valores</a><br>
+            <a href="#" class="css">Herencia y precedencia</a><br>
+            <a href="#" class="css">Ejemplos de background</a><br>
+            <a href="#" class="css">Ejemplos de texto</a><br>
+            <a href="#" class="css">Ejemplos de links y tablas</a><br>
+            <a href="#" class="css">Ejemplos de imagenes y bordes</a><br>
+            <a href="#" class="css">Diseño visual I</a><br>
+            <a href="#" class="css">Diseño visual II</a><br>
+            <a href="#" class="css">Ejemplos de homepages</a><br>
+            <a href="#" class="css">Validación de CSS</a><br>
+            <a href="#" class="css">Proyecto final</a><br>
+            <a href="#" class="css">Bibliografía y enlaces</a><br>
+            <a href="#" class="css">Guía rápida de CSS 2.1</a><br>
+        </div>
+    </aside>
+    <article>
+        <h1>Formato del texto</h1>
+        <p>En este apartado veremos algunas etiquetas que sirven para <b>dar forma al texto:</b> cursiva, negrita, subrayado, tipos de letra, tamaños, etc.</p>
+        <p>
+            No obstante, se debe tener cuidado con estas etiquetas, ya que <b>la mayoría han quedado obsoletas.</b>
+            Esto se debe a que <b>HTML</b> debe utilizarse únicamente para estructurar el texto, <b>no para dar formato ni
+            mejorar la estética de la página:</b> eso es tarea de las hojas de estilo CSS que veremos en el tema siguiente.
+        </p>
+        <p>
+            Así, esta sección se ha dividido en dos partes: en la primera se explican las etiquetas que se siguen utilizando y
+            en la segunda las que han quedado obsoletas. <b>Las etiquetas obsoletas sólo se utilizarán en los ejercicios de esta sección,</b> pero en ninguno más.
+        </p>
+        <p>
+            Señalar que <b>se pueden combinar estas etiquetas</b> para producir varios efectos a la vez: se puede subrayar y poner en negrita,
+            o poner en cursiva y cambiar el tipo de letra, etc. Sólo es necesario cerrar las etiquetas de manera correcta (es decir,
+            inversamente a como se han abierto, tal como se explicó en la sección de <a href="../index.html">Introducción a HTML</a>).
+        </p>
+        <p>Son elementos de línea, por tanto, no hacen salto de línea y se pueden introducir dentro de un párrafo <b>&lt;p&gt;</b></p>
+
+        <h3>Texto con formato previo</h3>
+        <p>
+            Sirve para que el navegador visualice el texto tal y como aparece en el contenido de esta etiqueta,
+            respetando tabuladores, espacios y saltos de línea.
+        </p>
+        <p>La única excepción es que introduzcamos en el contenido otros elementos HHTML, los cuales se ejecutarán también.</p>
+        <p>Etiqueta final obligatoria</p>
+        <div class="recuadro">
+<pre>
+    &lt;pre&gt;
+    Ejemplo
+        de
+           Texto
+                Preformateado
+    &lt;/pre&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+<pre>
+    Ejemplo
+        de
+           Texto
+                Preformateado
+</pre>
+        </div>
+
+        <h2>Etiquetas que se siguen utilizando</h2>
+        <h4 style="color: black">&lt;b&gt; &lt;i&gt; &lt;big&gt;&lt;small&gt;&lt;tt&gt;&lt;s&gt;&lt;strike&gt;</h4>
+        <h3>Negrita</h3>
+        <p>
+            Para resaltar un trozo de texto en negrita se utilizan las etiquetas <b>&lt;b&gt; &lt;/b&gt;.</b> Estas etiquetas pueden
+            (y deben) utilizarse dentro de las etiquetas de párrafo. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;p&gt;Este texto forma parte de un párrafo. Y esta &lt;b&gt;palabra&lt;/b&gt;
+    está en &lt;b&gt;negrita&lt;/b&gt; dentro del mismo párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+            <p>Este texto forma parte de un párrafo. Y esta <b>palabra</b>
+            está en <b>negrita</b> dentro del mismo párrafo</p>
+        </div>
+        <p>Esta etiqueta tiene un sinónimo: en lugar de utilizar <b>&lt;b&gt; y &lt;/b&gt;</b> se puede utilizar también <b>&lt;strong&gt; &lt;/strong&gt;</b>.</p>
+
+        <h3>Cursiva</h3>
+        <p>
+            Para resaltar un trozo de texto en cursiva se utilizan las etiquetas <b>&lt;i&gt; &lt;/i&gt;</b>. Estas etiquetas pueden (y deben)
+            utilizarse dentro de las etiquetas de párrafo. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;p&gt;Este texto forma parte de un párrafo. Y esta &lt;i&gt;palabra&lt;/i&gt;
+    está en &lt;i&gt;cursiva&lt;/i&gt; dentro del mismo párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+            <p>Este texto forma parte de un párrafo. Y esta <i>palabra</i>
+                está en <i>cursiva</i> dentro del mismo párrafo</p>
+        </div>
+        <p>Esta etiqueta tiene un sinónimo: en lugar de utilizar <b>&lt;i&gt; y &lt;/i&gt;</b> se puede utilizar también <b>&lt;em&gt; &lt;/em&gt;</b></p>
+        <h3>Texto monoespaciado</h3>
+        <p>
+            Para que un trozo de texto se represente con letras monoespaciadas (también llamado teletipo,
+            dado que <b>cada letra ocupa el mismo espacio</b>) se utilizan las etiquetas <b>&lt;tt&gt; &lt;/tt&gt;.</b> Estas etiquetas pueden
+            (y deben) utilizarse dentro de las etiquetas de párrafo. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;p&gt;Este texto forma parte de un párrafo. Y esta &lt;tt&gt;palabra&lt;/tt&gt;
+    está en &lt;tt&gt;modo teletipo&lt;/tt&gt; dentro del mismo párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+            <p>Este texto forma parte de un párrafo. Y esta <tt>palabra</tt>
+                está en <tt>modo teletipo</tt> dentro del mismo párrafo</p>
+        </div>
+        <h3>Tamaño de letra grande</h3>
+        <p>
+            Para resaltar un trozo de texto con un tamaño de letra mayor se utilizan las etiquetas <b>&lt;big&gt; &lt;/big&gt;.</b>
+            Estas etiquetas pueden (y deben) utilizarse dentro de las etiquetas de párrafo. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;p&gt;Este texto forma parte de un párrafo. Y esta &lt;big&gt;palabra&lt;/big&gt;
+    está en &lt;big&gt;tamaño grande&lt;/big&gt; dentro del mismo párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+            <p>Este texto forma parte de un párrafo. Y esta <big>palabra</big>
+                está en <big>tamaño grande</big> dentro del mismo párrafo</p>
+        </div>
+        <h3>Tamaño de letra pequeño</h3>
+        <p>
+            Para resaltar un trozo de texto con un tamaño de letra más pequeño se utilizan las etiquetas <b>&lt;small&gt; &lt;/small&gt;.</b>
+            Estas etiquetas pueden (y deben) utilizarse dentro de las etiquetas de párrafo. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+  &lt;p&gt;Este texto forma parte de un párrafo.Y esta &lt;small&gt;palabra&lt;/small&gt;
+  está en &lt;small&gt;tamaño pequeño&lt;/small&gt; dentro del mismo párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+            <p>Este texto forma parte de un párrafo. Y esta <small>palabra</small>
+                está en <small>tamaño pequeño</small> dentro del mismo párrafo</p>
+        </div>
+        <h2>Etiquetas obsoletas (no deben utilizarse)</h2>
+        <h3>Subrayado</h3>
+        <p>
+            Para resaltar un trozo de texto en subrayado se utilizan las etiquetas <b>&lt;u&gt; &lt;/u&gt;</b>. Estas etiquetas pueden (y deben) utilizarse
+            dentro de las etiquetas de párrafo. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+  &lt;p&gt;Este texto forma parte de un párrafo.Y esta &lt;u&gt;palabra&lt;/u&gt;
+  está en &lt;u&gt;subrayada&lt;/u&gt; dentro del mismo párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+            <p>Este texto forma parte de un párrafo. Y esta <u>palabra</u>
+                está en <u>subrayada</u> dentro del mismo párrafo</p>
+        </div>
+        <h3>Tachado</h3>
+        <p>
+            Para tachar un trozo de texto con una línea a media altura se utilizan las etiquetas
+            <b>&lt;s&gt; &lt;/s&gt;</b> y <b>&lt;strike&gt; &lt;/strike&gt;.</b> Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+  &lt;p&gt;Este texto forma parte de un párrafo.Y esta &lt;s&gt;palabra&lt;/s&gt;
+  está en &lt;strike&gt;tachada&lt;/strike&gt; dentro del mismo párrafo&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado;</p>
+        <div class="recuadro">
+            <p>Este texto forma parte de un párrafo. Y esta <s>palabra</s>
+                está en <s>tachada</s> dentro del mismo párrafo</p>
+        </div>
+        <h3>Cambiar el tipo de letra: la etiqueta &lt;font&gt;</h3>
+        <p>Etiqueta de cierre obligatorio</p>
+        <p>Está desaprobada</p>
+        <p>
+            Para resaltar un trozo de texto cambiando su tipo, color o tamaño de letra se utilizan las etiquetas <b>&lt;font&gt; &lt;/font&gt;.</b>
+            Estas etiquetas pueden (y deben) utilizarse dentro de las etiquetas de párrafo. Para controlar los aspectos del texto que se
+            pretenden cambiar se utilizan los siguientes <b>atributos</b> dentro de la etiqueta:
+        </p>
+        <ul>
+            <li>
+                Atributo <b>size</b>. Permite cambiar el <b>tamaño</b> de la letra. Puede tomar <b>valores entre 1 y 7</b>.
+            </li>
+            <li>
+                Atributo <b>face</b>. Permite cambiar la <b>familia o tipo de letra</b>. Los valores que toma se corresponden con un tipo de letra: Arial, Tahoma, etc.
+            </li>
+            <li>
+                Atributo <b>color</b>. Permite cambiar el <b>color de la letra</b>. Puede tomar <b>valores hexadecimales</b> precedidos por el signo <b>#</b> seguido de tres parejas de dígitos
+                hexadecimales que siguen el esquema <b>RRGGBB</b> (los dos primeros indican el nivel de <b>rojo</b>, los de enmedio el de <b>verde</b> y los de la derecha el de <b>azul</b>) o <b>nombres de colores</b>.
+                En el siguiente enlace puedes consultar más información sobre los colores HTML: <a href="https://es.wikipedia.org/wiki/Colores_web">colores HTML en la wikipedia</a>. Y en el siguiente enlace tienes un editor de colores que
+                proporciona su valor hexadecimal: <a href="<https://www.w3schools.com/colors/colors_picker.asp">Editor de colores</a>. En la imagen que se muestra a continuación aparecen los colores que se pueden utilizar con su nombre:
+            </li>
+        </ul>
+        <img src="../images/colores.png" alt="Colores" style="margin-left: 15%; width: 70%;">
+        <p>
+            Se puede utilizar <b>uno, dos o tres atributos a la vez</b> dentro de la misma etiqueta <b>&lt;font&gt;</b>. Hay que recordar que el <b>valor de los atributos
+            se pone entre comillas</b>. Por ejemplo, el código siguiente:
+        </p>
+        <div class="recuadro">
+<pre>
+    &lt;p&gt;&lt;font color="green" face="Arial"&gt;
+        Esta frase aparece verde y con letra Arial.
+    &lt;/font&gt;
+    &lt;font color="#FF0000" size="6"&gt;
+        Esta frase está en rojo y con letra en tamaño 6.
+    &lt;/font&gt;
+    &lt;font face="Times"&gt;
+        Esta frase está en letra Times.
+    &lt;/font&gt;&lt;/p&gt;
+</pre>
+        </div>
+        <p>Produce el siguiente resultado:</p>
+        <div class="recuadro">
+            <p><font color="green" face="Arial">
+                Esta frase aparece verde y con letra Arial.
+            </font>
+            <font color="#FF0000" size="6">
+                Esta frase está en rojo y con letra en tamaño 6.
+            </font>
+            <font face="Times">
+                Esta frase está en letra Times.
+            </font></p>
+        </div>
+        <h2>Ejercicio 2</h2>
+        <p>
+            Realiza una página web cuya apariencia sea similar a la del siguiente <a href="../ejercicios/ejercicio2.pdf" target="_blank">enlace</a>.
+            Guárdala con el nombre <b>ejercicio2.html</b>
+        </p>
+    </article>
+    <footer>
+        <p class="pie">Manual de HTML - CSS - Diseño de Interfaces Web - DAW</p>
+        <!--<a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>
+        <a class="pie" href="#"></a>-->
+    </footer>
+</main>
 
 </body>
 </html>
